@@ -54,7 +54,7 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
       {/* Close button */}
       <button
         onClick={onClose}
-        className="fixed top-6 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer"
+        className="fixed top-20 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer"
       >
         <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <line x1="4" y1="4" x2="20" y2="20" />
@@ -65,7 +65,7 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
       {/* Back link */}
       <button
         onClick={onClose}
-        className={`fixed top-6 right-6 z-[110] flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group cursor-pointer`}
+        className={`fixed top-20 right-6 z-[110] flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group cursor-pointer`}
       >
         {t.projects.allProjects}
         <svg className="w-3.5 h-3.5 rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
