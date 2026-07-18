@@ -2,8 +2,13 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 
+interface ArticleSection {
+  heading: string;
+  paragraphs: string[];
+}
+
 interface Article {
-  id: number; title: string; subtitle: string; category: string; readTime: string; date: string; image: string; content: string[]; tags: string[];
+  id: number; title: string; subtitle: string; category: string; readTime: string; date: string; image: string; content: string[]; tags: string[]; body?: ArticleSection[];
 }
 
 interface ArticleDetailProps {
@@ -59,9 +64,23 @@ export default function ArticleDetail({ article, onClose }: ArticleDetailProps) 
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.8 }}>
-          {article.content.map((paragraph, i) => (
-            <p key={i} className="text-sm md:text-base text-neutral-400 leading-[2] mb-5 font-light">{paragraph}</p>
-          ))}
+          {article.body ? (
+            article.body.map((section, si) => (
+              <div key={si} className="mb-9">
+                <h2 className="text-lg md:text-xl font-light text-white tracking-tight mb-4 flex items-center gap-3">
+                  <span className="w-6 h-[1px] bg-[#c0392b]" />
+                  {section.heading}
+                </h2>
+                {section.paragraphs.map((paragraph, pi) => (
+                  <p key={pi} className="text-sm md:text-base text-neutral-400 leading-[2.1] mb-4 font-light">{paragraph}</p>
+                ))}
+              </div>
+            ))
+          ) : (
+            article.content.map((paragraph, i) => (
+              <p key={i} className="text-sm md:text-base text-neutral-400 leading-[2.1] mb-5 font-light">{paragraph}</p>
+            ))
+          )}
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="mt-10 pt-6 border-t border-neutral-800/50">

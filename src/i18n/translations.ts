@@ -420,20 +420,110 @@ const translations = {
       allArticles: 'همه مقالات',
       data: [
         { id: 1, title: 'متریال شناسی: بتن اکسپوز', subtitle: 'Material Study: Exposed Concrete', category: 'متریال شناسی', readTime: '۸', date: '۱۴۰۳/۰۹',
-          content: ['بتن اکسپوز یکی از محبوب‌ترین مصالح در معماری معاصر جهان است.', 'تاریخچه آن به دوران روم بازمی‌گردد.', 'در معماری ایرانی از دهه ۱۳۸۰ مورد توجه قرار گرفت.', 'مزایا شامل مقاومت بالا و دوام طولانی است.', 'نکات اجرایی شامل انتخاب قالب و نسبت اختلاط است.'],
-          tags: ['بتن', 'متریال', 'معماری معاصر'] },
+          content: ['بتن اکسپوز یکی از محبوب‌ترین مصالح در معماری معاصر جهان است و امروزه به امضای بسیاری از پروژه‌های مینیمال تبدیل شده است.'],
+          tags: ['بتن', 'متریال', 'معماری معاصر'],
+          body: [
+            { heading: 'تاریخچه و ظهور', paragraphs: [
+              'بتن اکسپوز یا بتن نمایان، ریشه در سنت‌های بنایی روم باستان دارد، اما شکل مدرن آن مدیون جنبش معماری بروتالیسم نیمه دوم قرن بیستم است. معمارانی چون لوکوربوزیه و پیتر زومتور با رها کردن پوشش‌های تزیینی، زیبایی را در خود ماده جستند.',
+              'در ایران، استفاده از بتن اکسپوز از دهه ۱۳۸۰ و با رویکردهای مینیمال وارد معماری مسکونی و عمومی شد. امروز در پروژه‌هایی همچون هاستل سفید و ویلاهای شمال، بتن در کنار چوب و فولاد هویت بصری پروژه را می‌سازد.',
+            ]},
+            { heading: 'ویژگی‌های فنی و زیبایی‌شناسی', paragraphs: [
+              'مزایای اصلی شامل مقاومت فشاری بسیار بالا، دوام طولانی در برابر شرایط جوی، و قابلیت قالب‌گیری در فرم‌های آزاد است. سطح بتن می‌تواند از صیقلی و یکدست تا دانه‌دانه و بافت‌دار متغیر باشد و همین گستردگی، آن را برای زبان معماری رستیک–مدرن ایده‌آل می‌کند.',
+              'نکته کلیدی در کیفیت نهایی، یکنواختی رنگ و بافت است. تفاوت در نسبت آب به سیمان یا منشأ شن و ماسه باعث ایجاد لکه‌های ناخواسته می‌شود؛ از این‌رو کنترل دقیق اختلاط و اجرای آزمایشی پیش از بتن‌ریزی اصلی ضروری است.',
+            ]},
+            { heading: 'قالب‌بندی و اجرا', paragraphs: [
+              'قالب در واقع «قلم‌مو»ی معمار روی بتن است. چوب‌برش‌خورده، فلز، و پلی‌استایرن هرکدام اثری متفاوت از خود بر جای می‌گذارند. در کارگاه نماساز، ترجیح بر استفاده از قالب‌های چوبی با بافت طبیعی است تا سطحی گرم و انسانی پدید آید.',
+              'پس از باز کردن قالب، عملیات کیورینگ (مراقبت رطوبتی) حداقل هفت روز ادامه می‌یابد تا مقاومت نهایی تضمین شود. در نهایت یک لایه محافظ نانو یا آب‌بند، بتن را در برابر لکه و رطوبت شمال ایران حفظ می‌کند.',
+            ]},
+            { heading: 'کاربرد در پروژه‌های نماساز', paragraphs: [
+              'ما بتن اکسپوز را نه به عنوان یک سطح تخت، بلکه به عنوان روایتی از زمان و فرآیند ساخت می‌بینیم. ترک‌های مویی، درزهای قالب و تغییرات رنگ، بخشی از صداقت متریال‌اند نه نقص.',
+              'ترکیب بتن با چوب گردو و فولاد سیاه، امضای بصری مجموعه رستیک ماست؛ جایی که سردی بتن با گرمای چوب و دقت فولاد به تعادل می‌رسد.',
+            ]},
+          ] },
         { id: 2, title: 'معماری منظر: فضای سبز شهری', subtitle: 'Landscape Architecture', category: 'معماری منظر', readTime: '۱۲', date: '۱۴۰۳/۰۸',
-          content: ['معماری منظر با طراحی فضاهای باز سروکار دارد.', 'کمبود فضای سبز چالش اصلی شهرهاست.', 'طراحی پارک با رویکرد پایدار اهمیت دارد.', 'حفاظت از تنوع زیستی ضروری است.', 'بازآفرینی باغ‌های تاریخی موفق بوده.'],
-          tags: ['معماری منظر', 'فضای سبز', 'پایداری'] },
+          content: ['معماری منظر هنر طراحی فضاهای باز و پیوند انسان با طبیعت است؛ رشته‌ای که امروز به اندازه خود ساختمان اهمیت دارد.'],
+          tags: ['معماری منظر', 'فضای سبز', 'پایداری'],
+          body: [
+            { heading: 'چرا فضای سبز حیاتی است', paragraphs: [
+              'کمبود فضای سبز و جزیره‌های حرارتی، چالش اصلی کلان‌شهرهای ایران‌اند. فضای سبز نه‌تنها کیفیت هوا را بهبود می‌بخشد، بلکه اثری مستقیم بر سلامت روان، کاهش استرس و ارتقای تعامل اجتماعی دارد.',
+              'مطالعات نشان می‌دهند دسترسی به فضای سبز در کمتر از چهارصد متری منازل، کیفیت زندگی ساکنان را به‌طور معناداری بالا می‌برد. از این‌رو تخصیص زمین به فضای باز، باید پیش از طراحی حجم ساختمان رخ دهد.',
+            ]},
+            { heading: 'رویکرد پایدار در طراحی پارک', paragraphs: [
+              'طراحی پارک با رویکرد پایدار، یعنی بازچرخانی آب باران، استفاده از گونه‌های بومی کم‌نیاز به آب، و سایه‌اندازی هوشمند برای کاهش تابش تابستان. در شمال ایران، بهره‌گیری از پوشش گیاهی هیرکانی فرصتی بی‌نظیر برای منظری بومی و اصیل فراهم می‌کند.',
+              'مسیرهای پیاده، نشیمن‌های انعطاف‌پذیر و تقسیم‌بندی فضا به زون‌های فعال و ساکت، تجربه‌ای چندلایه از فضای عمومی می‌سازند که هم کودکان و هم سالمندان را در بر می‌گیرد.',
+            ]},
+            { heading: 'حفاظت از تنوع زیستی', paragraphs: [
+              'یک فضای سبز موفق، زیستگاه است نه فقط تزیین. حوضچه‌های کم‌عمق، دیوارهای سبز و درختان میوه‌دار، زنجیره غذایی کوچکی از حشرات و پرندگان را بازمی‌گردانند.',
+              'در پروژه شهرک ویلایی بورهان، تمامی فضاهای سبز و ورزشی درون خود شهرک پیش‌بینی شده‌اند تا ساکنان بدون نیاز به خودرو، به طبیعت دسترسی داشته باشند.',
+            ]},
+            { heading: 'بازآفرینی باغ‌های تاریخی', paragraphs: [
+              'ایران میراثی از باغ‌های چهارباغ دارد که الگویی جهانی در تقسیم آب و سایه‌اند. بازخوانی این الگوها با زبان امروز، راهی میان‌بر برای طراحی منظری است که هم اقلیمی باشد و هم خاطره‌انگیز.',
+              'بازآفرینی باغ‌های تاریخی زمانی موفق است که فرم را تقلید نکند، بلکه منطق سازمان‌دهی فضا — محوریت آب، سایه، و حصار سبز — را به زبان معاصر ترجمه کند.',
+            ]},
+          ] },
         { id: 3, title: 'اصول طراحی نور طبیعی', subtitle: 'Natural Light Design', category: 'طراحی', readTime: '۱۰', date: '۱۴۰۳/۰۷',
-          content: ['نور طبیعی مهم‌ترین عنصر معماری است.', 'انواع آن شامل مستقیم و غیرمستقیم است.', 'در معماری سنتی ایران به هنر تبدیل شده بود.', 'جهت‌گیری ساختمان نقش کلیدی دارد.', 'نور کافی بهره‌وری را ۱۵٪ افزایش می‌دهد.'],
-          tags: ['نور طبیعی', 'طراحی داخلی', 'پنجره'] },
+          content: ['نور طبیعی مهم‌ترین عنصر بی‌کلام معماری است؛ عنصری که فضا را زنده می‌کند و گذر زمان را در دل دیوارها حک می‌کند.'],
+          tags: ['نور طبیعی', 'طراحی داخلی', 'پنجره'],
+          body: [
+            { heading: 'انواع و کیفیت نور', paragraphs: [
+              'نور مستقیم تیز و پرکنتراست است و سایه‌هایی دراماتیک می‌سازد؛ نور غیرمستقیم از طریق سطوح منعکس‌کننده یا پخش‌کننده نرم‌تر و یکنواخت‌تر است. ترکیب هوشمندانه هر دو، تعادلی میان تأکید بصری و آسایش چشم ایجاد می‌کند.',
+              'رنگ نور در ساعات مختلف شبانه‌روز تغییر می‌کند؛ از گرمی طلایی صبح زود تا سردی آبی غروب. طراح آگاه، این تغییر را نه نقص بلکه بخشی از زیبایی فضا به‌شمار می‌آورد.',
+            ]},
+            { heading: 'درس‌های معماری سنتی ایران', paragraphs: [
+              'معماری سنتی ایران نور را به هنر بدل کرده بود: از نورگیرهای بالای حوضخانه گرفته تا جبهه‌بندی اتاق‌ها بر محور جنوبی برای بهره‌وری از خورشید زمستان. حیاط مرکزی، کلک‌سیون و ارسی‌ها، ابزارهایی ظریف برای رام کردن نور بودند.',
+              'این حکمت بومی امروز در خدمت معماری کم‌مصرف قرار می‌گیرد؛ ساختمانی که نور و گرمای خورشید را در زمستان به درون فرا می‌خواند و در تابستان با سایه‌بان‌های بیرونی دفع می‌کند.',
+            ]},
+            { heading: 'جهت‌گیری و بازشو', paragraphs: [
+              'جهت‌گیری ساختمان نقشی کلیدی دارد: نشیمن‌های اصلی رو به جنوب برای نور ملایم روز، و فضاهای خدماتی رو به شمال برای خنکای تابستان. محل و اندازه پنجره تعیین‌کننده میزان نور، گرما و دید است.',
+              'پنجره‌های بلند تا کف، عمق دیوار را به بخشی از نمایش نور تبدیل می‌کنند؛ سایه‌ای که در طول روز بر کف اتاق جابه‌جا می‌شود، ساعتی زنده از معماری است.',
+            ]},
+            { heading: 'بهره‌وری و آسایش', paragraphs: [
+              'پژوهش‌ها نشان می‌دهند دسترسی به نور طبیعی کافی، بهره‌وری را تا پانزده درصد و کیفیت خواب را به‌طور چشمگیری افزایش می‌دهد. نور روز همچنین نیاز به روشنایی مصنوعی را کاهش و در مصرف انرژی صرفه‌جویی می‌کند.',
+              'در طراحی داخلی، نور طبیعی با نورپردازی لایه‌ای ترکیب می‌شود تا در شب نیز حس پیوستگی با ریتم روز حفظ شود.',
+            ]},
+          ] },
         { id: 4, title: 'معماری پایدار در ایران', subtitle: 'Sustainable Architecture', category: 'پایداری', readTime: '۱۵', date: '۱۴۰۳/۰۶',
-          content: ['معماری پایدار تأثیرات زیست‌محیطی را کاهش می‌دهد.', 'ایران برای انرژی خورشیدی عالی است.', 'معماری بومی هزاران سال پایداری را رعایت کرده.', 'استاندارد ۱۴۰۰۰ الزامی است.', 'ترکیب میراث و فناوری آینده را می‌سازد.'],
-          tags: ['پایداری', 'سبز', 'انرژی'] },
+          content: ['معماری پایدار نه مدی لوکس، بلکه ضرورتی اخلاقی و اقلیمی برای سرزمینی خشک و پرتابش خورشید است.'],
+          tags: ['پایداری', 'سبز', 'انرژی'],
+          body: [
+            { heading: 'چرا ایران استثناست', paragraphs: [
+              'ایران با بیش از سیصد روز آفتابی در سال، یکی از مستعدترین کشورهای جهان برای انرژی خورشیدی است. افزون بر این، تنوع اقلیمی از کویر تا جنگل‌های هیرکانی، معماری بومی غنی و متنوعی را پدید آورده که هر یک پاسخی هوشمندانه به اقلیم خود بوده‌اند.',
+              'معماری خشتی یزد، بادگیرهای بلند، و شبستان‌های زمستانی، نمونه‌هایی از پایداری هستند که پیش از پیدایش مفهوم مدرن آن، هزاران سال تجربه اندوخته‌اند.',
+            ]},
+            { heading: 'معماری بومی به مثابه میراث پایداری', paragraphs: [
+              'خانه‌های داخل‌گرای ایرانی با حیاط مرکزی، تهویه طبیعی و سایه‌اندازی خود، نمونه‌ای از طراحی کم‌مصرف‌اند. مصالح بومی کم‌هزینه در حمل‌ونقل و سازگار با اقلیم بودند.',
+              'بازخوانی این الگوها نه از روی نوستالژی، بلکه برای پاسخ به چالش‌های امروز — گرمایش زمین و بحران انرژی — راهبردی است.',
+            ]},
+            { heading: 'استانداردها و الزامات', paragraphs: [
+              'امروز استانداردهای ملی و بین‌المللی (از جمله مبحث ۱۹ مقررات ملی و گواهینامه‌های سبز) اجرای رویکردهای پایدار را الزامی یا تشویق می‌کنند. عایق‌کاری، بازیافت آب خاکستری و سامانه‌های فتوولتائیک، حداقل‌های یک ساختمان مسئول‌اند.',
+              'در پروژه‌های استودیو نماساز، ما کاهش ردپای کربن را از انتخاب متریال — چوب محلی، بتن با نسبت سیمان بهینه — آغاز می‌کنیم.',
+            ]},
+            { heading: 'ترکیب میراث و فناوری', paragraphs: [
+              'آینده معماری پایدار ایران در گفت‌وگوی میراث و فناوری است: بادگیری که با مبدل حرارتی کار می‌کند، یا حیاط مرکزی که پنل خورشیدی در سایه‌بان خود دارد.',
+              'پایداری واقعی نه در شعار، بلکه در جزئیات اجرایی و تعهد معمار به مسئولیت در برابر زمین و ساکنانش معنا می‌یابد.',
+            ]},
+          ] },
         { id: 5, title: 'ترکیب مصالح سنتی و مدرن', subtitle: 'Traditional & Modern Materials', category: 'متریال شناسی', readTime: '۱۱', date: '۱۴۰۳/۰۵',
-          content: ['ترکیب مصالح چالش‌برانگیزترین موضوع است.', 'آجر محبوب‌ترین مصالح برای ترکیب است.', 'سنگ مرمر برای نمای مدرن عالی است.', 'چوب گرمای طبیعی اضافه می‌کند.', 'ایجاد هارمونی کلید موفقیت است.'],
-          tags: ['مصالح', 'آجر', 'سنگ', 'چوب'] },
+          content: ['ترکیب مصالح، چالش‌برانگیزترین و در عین حال لذت‌بخش‌ترین بخش طراحی است؛ جایی که گذشته و حال در کنار هم می‌نشینند.'],
+          tags: ['مصالح', 'آجر', 'سنگ', 'چوب'],
+          body: [
+            { heading: 'هنر ترکیب', paragraphs: [
+              'ترکیب موفق مصالح، نه در چسباندن تکه‌های ناهمگون، بلکه در ایجاد گفت‌وگویی میان مقیاس، بافت و زمان است. هر متریال داستانی دارد: آجر حکایت شهر، چوب روایت جنگل، و بتن روایت عصر حاضر.',
+              'کلید موفقیت، تعریف یک منطق روشن است: کدام متریال غالب است، کدام مکمل، و کجا تضاد به عاملی نمایشی بدل می‌شود.',
+            ]},
+            { heading: 'آجر و سنگ', paragraphs: [
+              'آجر محبوب‌ترین و ماندگارترین متریال ایران برای ترکیب است؛ از نمای روستایی تا معماری معاصر. چیدمان متفاوت آجر — روکار، لفت‌وبست، یا فرچین — بافتی زنده می‌سازد.',
+              'سنگ مرمر و تراورتن برای نماهای مدرن و کف‌های لوکس عالی‌اند؛ شفافیت و رگه‌های طبیعی آن‌ها با بتن و فولاد هم‌کلام می‌شوند.',
+            ]},
+            { heading: 'چوب و گرمای طبیعی', paragraphs: [
+              'در میان متریال سرد مدرن، چوب گرمای انسانی اضافه می‌کند. چوب گردو و راش شمال، با رگه‌های ارگانیک خود، صیقل سخت بتن و فولاد را نرم می‌کنند.',
+              'در مجموعه رستیک نماساز، چوب همواره حضوری دست‌ساخته دارد؛ سطحی که لمس دست نجار بر آن باقی مانده باشد.',
+            ]},
+            { heading: 'خلق هارمونی', paragraphs: [
+              'هارمونی نه یکنواختی، بلکه تعادل میان تضادها‌ست. قانون ساده ما: حداکثر سه متریال غالب در هر فضا، با یک رنگ خنثی به عنوان زمینه.',
+              'وقتی بتن، چوب و فولاد در کنار هم قرار می‌گیرند، هر یک ضعف دیگری را می‌پوشانند و قدرت یکدیگر را آشکار می‌کنند — و این همان روح معماری نماساز است.',
+            ]},
+          ] },
       ],
     },
     footer: {
@@ -899,20 +989,110 @@ const translations = {
       allArticles: 'All Articles',
       data: [
         { id: 1, title: 'Material Study: Exposed Concrete', subtitle: 'متریال شناسی: بتن اکسپوز', category: 'Material Study', readTime: '8', date: '2024/12',
-          content: ['Exposed concrete is one of the most popular materials in contemporary architecture worldwide.', 'Its history dates back to the Roman era.', 'It gained attention in Iranian architecture from the 2000s.', 'Advantages include high resistance and long durability.', 'Execution tips include formwork selection and mixing ratios.'],
-          tags: ['Concrete', 'Material', 'Contemporary Architecture'] },
+          content: ['Exposed concrete is among the most beloved materials in contemporary architecture worldwide, now a signature of minimalist practice.'],
+          tags: ['Concrete', 'Material', 'Contemporary Architecture'],
+          body: [
+            { heading: 'History & Emergence', paragraphs: [
+              'Exposed concrete — or béton brut — traces back to Roman masonry, yet its modern form is owed to the post-war Brutalist movement. Architects such as Le Corbusier and Peter Zumthor let go of decorative cladding and sought beauty in the material itself.',
+              'In Iran, exposed concrete entered residential and public architecture in the 2000s with minimalist sensibilities. Today, in projects like the White Hostel and northern villas, concrete alongside wood and steel shapes the project’s visual identity.',
+            ]},
+            { heading: 'Technical & Aesthetic Qualities', paragraphs: [
+              'Its core advantages are very high compressive strength, long durability against weather, and the freedom to cast nearly any form. The surface may range from polished and uniform to grainy and textured — a flexibility ideal for a rustic–modern language.',
+              'The key to a fine finish is colour and texture consistency. Variations in water–cement ratio or sand origin cause unwanted stains; precise mix control and a trial pour before the main cast are therefore essential.',
+            ]},
+            { heading: 'Formwork & Execution', paragraphs: [
+              'Formwork is, in truth, the architect’s brush on concrete. Timber, metal, and polystyrene each leave a distinct imprint. At NAMASAZ we prefer textured timber formwork so the surface reads warm and human.',
+              'After stripping, curing (moisture care) continues at least seven days to secure final strength. A nano or waterproof sealant then protects the concrete against northern Iran’s humidity and staining.',
+            ]},
+            { heading: 'Use in NAMASAZ Projects', paragraphs: [
+              'We read exposed concrete not as a flat surface but as a narrative of time and process. Hairline cracks, form joints, and colour shifts are the honesty of the material, not defects.',
+              'Pairing concrete with walnut wood and black steel is the visual signature of our Rustic Collection — where concrete’s coolness is balanced by wood’s warmth and steel’s precision.',
+            ]},
+          ] },
         { id: 2, title: 'Landscape Architecture: Urban Green Space', subtitle: 'معماری منظر: فضای سبز شهری', category: 'Landscape', readTime: '12', date: '2024/11',
-          content: ['Landscape architecture deals with designing outdoor spaces.', 'Lack of green space is the main challenge of cities.', 'Park design with a sustainable approach is important.', 'Biodiversity conservation is essential.', 'Revitalization of historic gardens has been successful.'],
-          tags: ['Landscape', 'Green Space', 'Sustainability'] },
+          content: ['Landscape architecture is the art of shaping open space and binding people to nature — a discipline now as vital as the building itself.'],
+          tags: ['Landscape', 'Green Space', 'Sustainability'],
+          body: [
+            { heading: 'Why Green Space Is Vital', paragraphs: [
+              'The shortage of green space and urban heat islands are the chief challenges of Iranian metropolises. Green space improves air quality and directly benefits mental health, stress reduction, and social interaction.',
+              'Studies show that access to green space within four hundred metres of homes significantly raises residents’ quality of life — so allocating land to open space must precede, not follow, the massing of the building.',
+            ]},
+            { heading: 'A Sustainable Approach to Parks', paragraphs: [
+              'Sustainable park design means rainwater harvesting, native low-water species, and smart shading to cut summer gain. In northern Iran, the Hyrcanian forest cover offers an unmatched opportunity for an authentic, local landscape.',
+              'Pedestrian paths, flexible seating, and zoning into active and quiet areas create a layered public experience that serves children and the elderly alike.',
+            ]},
+            { heading: 'Biodiversity Conservation', paragraphs: [
+              'A successful green space is a habitat, not merely decoration. Shallow pools, green walls, and fruit trees restore a small food chain of insects and birds.',
+              'In the Borhan villa township, all green and sports spaces are planned within the township itself, so residents reach nature without a car.',
+            ]},
+            { heading: 'Revitalising Historic Gardens', paragraphs: [
+              'Iran inherits the chahar-bagh garden — a global model for water and shade organisation. Re-reading these patterns in a contemporary language is a shortcut to landscape that is both climatic and memorable.',
+              'Revitalisation succeeds when it translates the logic of space — axial water, shade, green enclosure — rather than imitating the form.',
+            ]},
+          ] },
         { id: 3, title: 'Natural Light Design Principles', subtitle: 'اصول طراحی نور طبیعی', category: 'Design', readTime: '10', date: '2024/10',
-          content: ['Natural light is the most important element of architecture.', 'Types include direct and indirect.', 'In traditional Iranian architecture it had become an art.', 'Building orientation plays a key role.', 'Adequate light increases productivity by 15%.'],
-          tags: ['Natural Light', 'Interior Design', 'Windows'] },
+          content: ['Natural light is architecture’s most wordless element — the one that brings space alive and etches the passage of time into the walls.'],
+          tags: ['Natural Light', 'Interior Design', 'Windows'],
+          body: [
+            { heading: 'Types & Quality of Light', paragraphs: [
+              'Direct light is sharp and high-contrast, casting dramatic shadows; indirect light, bounced or diffused, is softer and more even. A smart blend of both balances visual emphasis with eye comfort.',
+              'The colour of light shifts through the day — from the golden warmth of early morning to the blue cool of dusk. The aware designer treats this shift not as a flaw but as part of the space’s beauty.',
+            ]},
+            { heading: 'Lessons from Traditional Iranian Architecture', paragraphs: [
+              'Traditional Iranian architecture turned light into an art: from the rooftop light-wells above the howz-khaneh to south-facing rooms capturing winter sun. The central courtyard, the jolfa, and the ornate windows were delicate instruments for taming light.',
+              'This native wisdom now serves low-energy design: a building that invites the sun’s warmth in winter and rejects it with external shading in summer.',
+            ]},
+            { heading: 'Orientation & Openings', paragraphs: [
+              'Building orientation is decisive: main living spaces face south for gentle daylight, service spaces face north for summer cool. The placement and size of windows determine light, heat, and view.',
+              'Floor-to-ceiling windows turn wall depth into a display of light; the shadow that travels across the floor through the day is a living clock of architecture.',
+            ]},
+            { heading: 'Productivity & Comfort', paragraphs: [
+              'Research shows adequate daylight can raise productivity by up to fifteen percent and markedly improve sleep quality. Daylight also cuts the need for artificial lighting and saves energy.',
+              'In interior design, natural light is combined with layered artificial lighting so the rhythm of the day persists into the night.',
+            ]},
+          ] },
         { id: 4, title: 'Sustainable Architecture in Iran', subtitle: 'معماری پایدار در ایران', category: 'Sustainability', readTime: '15', date: '2024/09',
-          content: ['Sustainable architecture reduces environmental impacts.', 'Iran is excellent for solar energy.', 'Vernacular architecture has maintained sustainability for thousands of years.', 'Standard 14000 is mandatory.', 'Combining heritage and technology builds the future.'],
-          tags: ['Sustainability', 'Green', 'Energy'] },
+          content: ['Sustainable architecture is not a luxury trend but an ethical and climatic necessity for a dry, sun-drenched land.'],
+          tags: ['Sustainability', 'Green', 'Energy'],
+          body: [
+            { heading: 'Why Iran Is Exceptional', paragraphs: [
+              'With over three hundred sunny days a year, Iran is among the world’s most promising countries for solar energy. Add its climatic diversity — from desert to Hyrcanian forests — and a rich, varied vernacular architecture emerges, each a smart response to its climate.',
+              'Yazd’s adobe towns, tall wind-catchers, and winter shabestans are examples of sustainability practised thousands of years before the modern concept existed.',
+            ]},
+            { heading: 'Vernacular as a Heritage of Sustainability', paragraphs: [
+              'Iran’s introverted homes with central courtyards provided natural ventilation and shading — models of low-consumption design. Local materials were low-cost to transport and suited to the climate.',
+              'Re-reading these patterns is not nostalgia but a strategy for today’s challenges — global warming and the energy crisis.',
+            ]},
+            { heading: 'Standards & Requirements', paragraphs: [
+              'Today national and international standards (including Chapter 19 of the National Building Regulations and green certifications) mandate or encourage sustainable approaches. Insulation, greywater recycling, and photovoltaic systems are the minimum of a responsible building.',
+              'At NAMASAZ we begin reducing carbon footprint with material choice — local wood, concrete with optimised cement ratio.',
+            ]},
+            { heading: 'Heritage Meets Technology', paragraphs: [
+              'The future of Iranian sustainable architecture lies in a dialogue between heritage and technology: a wind-catcher working with a heat exchanger, or a courtyard whose shading carries solar panels.',
+              'True sustainability lives not in slogans but in execution details and the architect’s responsibility toward the earth and its inhabitants.',
+            ]},
+          ] },
         { id: 5, title: 'Combining Traditional & Modern Materials', subtitle: 'ترکیب مصالح سنتی و مدرن', category: 'Material Study', readTime: '11', date: '2024/08',
-          content: ['Combining materials is the most challenging topic.', 'Brick is the most popular material for combining.', 'Marble is great for modern facades.', 'Wood adds natural warmth.', 'Creating harmony is the key to success.'],
-          tags: ['Materials', 'Brick', 'Stone', 'Wood'] },
+          content: ['Combining materials is the most challenging yet most rewarding part of design — where past and present sit side by side.'],
+          tags: ['Materials', 'Brick', 'Stone', 'Wood'],
+          body: [
+            { heading: 'The Art of Combination', paragraphs: [
+              'A successful material mix is not gluing disparate pieces but a dialogue of scale, texture, and time. Every material tells a story: brick of the city, wood of the forest, concrete of the present age.',
+              'The key to success is a clear logic — which material dominates, which complements, and where contrast becomes a display device.',
+            ]},
+            { heading: 'Brick & Stone', paragraphs: [
+              'Brick is Iran’s most beloved and enduring material for combination, from rural façades to contemporary architecture. Different laying patterns — running bond, English bond, or decorative — create a living texture.',
+              'Marble and travertine suit modern façades and luxury floors; their transparency and natural veins converse with concrete and steel.',
+            ]},
+            { heading: 'Wood & Natural Warmth', paragraphs: [
+              'Among cold modern materials, wood adds human warmth. Northern walnut and beech, with their organic grain, soften the hard polish of concrete and steel.',
+              'In the NAMASAZ Rustic Collection, wood always carries a handmade presence — a surface where the joiner’s touch remains.',
+            ]},
+            { heading: 'Creating Harmony', paragraphs: [
+              'Harmony is not uniformity but balance among contrasts. Our simple rule: at most three dominant materials per space, with one neutral colour as the ground.',
+              'When concrete, wood, and steel meet, each covers another’s weakness and reveals its strength — and that is the very spirit of NAMASAZ architecture.',
+            ]},
+          ] },
       ],
     },
     footer: {
