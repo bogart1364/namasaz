@@ -3,22 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLang } from '../../i18n/LanguageContext';
 import LanguageToggle from './LanguageToggle';
 
-function LogoSVG({ className = 'w-10 h-10', logoSub = 'طراحی و معماری نما ساز' }: { className?: string; logoSub?: string }) {
-  return (
-    <svg viewBox="0 0 200 80" className={className} fill="none">
-      <path d="M20 55 L45 20 L70 55" stroke="#c0392b" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M45 55 L70 20 L95 55" stroke="#2c3e50" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M70 55 L95 20 L120 55" stroke="#7f8c8d" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-      <rect x="52" y="35" width="6" height="6" fill="#c0392b" rx="0.5" />
-      <rect x="60" y="35" width="6" height="6" fill="#c0392b" rx="0.5" />
-      <rect x="52" y="43" width="6" height="6" fill="#c0392b" rx="0.5" />
-      <rect x="60" y="43" width="6" height="6" fill="#c0392b" rx="0.5" />
-      <text x="70" y="68" textAnchor="middle" fontFamily="Arial Black, sans-serif" fontSize="10" fontWeight="900" fill="#2c3e50" letterSpacing="1">NAMASAZ</text>
-      <text x="70" y="78" textAnchor="middle" fontFamily="Tahoma, sans-serif" fontSize="5.5" fill="#c0392b">{logoSub}</text>
-    </svg>
-  );
-}
-
 interface NavigationProps {
   onProductsClick: () => void;
 }
@@ -52,7 +36,7 @@ export default function Navigation({ onProductsClick }: NavigationProps) {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-[#0a0a0a]/85 backdrop-blur-md border-b border-white/5' : 'bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/50 to-transparent backdrop-blur-sm'}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
           <a href="#" className="flex items-center gap-3 group">
-            <LogoSVG className="w-10 h-10 md:w-12 md:h-12" logoSub={t.nav.logoSub} />
+            <img src="/logo.png" alt="NAMASAZ" className="h-9 w-auto object-contain md:h-11" />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
