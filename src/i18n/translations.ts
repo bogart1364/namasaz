@@ -214,7 +214,7 @@ const translations = {
           style: 'مینیمال رستیک', styleEn: 'Minimal Rustic',
           price: 'تماس بگیرید', priceEn: 'Contact',
           image: '/assets/gallery-products/product-04-01.jpg',
-          images: ['/assets/gallery-products/product-04-01.jpg','/assets/gallery-products/product-04-02.jpg','/assets/gallery-products/product-04-03.jpg','/assets/gallery-products/product-04-04.jpg'],
+          images: ['/assets/gallery-products/product-04-01.jpg','/assets/gallery-products/product-04-02.jpg','/assets/gallery-products/product-04-04.jpg'],
         },
         {
           id: 'P05', name: 'نیمکت', nameEn: 'Bench', category: 'نیمکت', categoryEn: 'Bench',
@@ -1098,7 +1098,7 @@ const translations = {
           style: 'مینیمال رستیک', styleEn: 'Minimal Rustic',
           price: 'تماس بگیرید', priceEn: 'Contact',
           image: '/assets/gallery-products/product-04-01.jpg',
-          images: ['/assets/gallery-products/product-04-01.jpg','/assets/gallery-products/product-04-02.jpg','/assets/gallery-products/product-04-03.jpg','/assets/gallery-products/product-04-04.jpg'],
+          images: ['/assets/gallery-products/product-04-01.jpg','/assets/gallery-products/product-04-02.jpg','/assets/gallery-products/product-04-04.jpg'],
         },
         {
           id: 'P05', name: 'نیمکت', nameEn: 'Bench', category: 'نیمکت', categoryEn: 'Bench',
