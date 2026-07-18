@@ -14,9 +14,10 @@ interface Article {
 interface ArticleDetailProps {
   article: Article | null;
   onClose: () => void;
+  onBackToAll?: () => void;
 }
 
-export default function ArticleDetail({ article, onClose }: ArticleDetailProps) {
+export default function ArticleDetail({ article, onClose, onBackToAll }: ArticleDetailProps) {
   const { t, align, alignEnd } = useLang();
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function ArticleDetail({ article, onClose }: ArticleDetailProps) 
         <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="4" y1="4" x2="20" y2="20" /><line x1="20" y1="4" x2="4" y2="20" /></svg>
       </button>
 
-      <button onClick={onClose} className="fixed top-6 right-6 z-[110] flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group cursor-pointer">
+      <button onClick={() => (onBackToAll ? onBackToAll() : onClose())} className="fixed top-6 right-6 z-[110] flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group cursor-pointer">
         {t.articles.allArticles}
         <svg className="w-3.5 h-3.5 rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
       </button>
@@ -103,7 +104,7 @@ export default function ArticleDetail({ article, onClose }: ArticleDetailProps) 
         </motion.div>
 
         <div className="mt-8 flex justify-center">
-          <button onClick={onClose} className="flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group">
+          <button onClick={() => (onBackToAll ? onBackToAll() : onClose())} className="flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group">
             {t.articles.allArticles}
             <svg className="w-3.5 h-3.5 rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
           </button>

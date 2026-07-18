@@ -111,7 +111,7 @@ export default function Articles() {
           </div>
         </div>
       </section>
-      <ArticleDetail article={sel} onClose={() => setSel(null)} />
+      <ArticleDetail article={sel} onClose={() => setSel(null)} onBackToAll={() => { setSel(null); setAllOpen(true); }} />
 
       <AnimatePresence>
         {allOpen && (
