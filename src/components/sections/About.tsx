@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
@@ -37,7 +37,7 @@ function FloatingVolume() {
       <mesh position={[1.2, 2.8, 0.5]} rotation={[0.3, 0.5, 0.2]}><tetrahedronGeometry args={[0.2, 0]} /><meshStandardMaterial color="#c0392b" roughness={0.7} metalness={0.1} /></mesh>
       <lineSegments>
         <bufferGeometry>
-          <bufferAttribute attach="attributes-position" count={6} array={new Float32Array([-2,0,1,-2,3.5,1,2,0,-1,2,3,-1,-1,0,2,1.5,2.5,-1.5])} itemSize={3} />
+          <bufferAttribute attach="attributes-position" args={[new Float32Array([-2,0,1,-2,3.5,1,2,0,-1,2,3,-1,-1,0,2,1.5,2.5,-1.5]), 3]} count={6} itemSize={3} />
         </bufferGeometry>
         <lineBasicMaterial color="#1f1e1c" />
       </lineSegments>
@@ -58,9 +58,9 @@ function AboutScene() {
 }
 
 export default function About() {
-  const { t, align, alignEnd } = useLang();
+  const { t, align } = useLang();
   const sectionRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start end', 'end start'] });
+  useScroll({ target: sectionRef, offset: ['start end', 'end start'] });
 
   return (
     <section id="about" ref={sectionRef} className="relative w-full bg-[#0a0a0a] z-20 overflow-hidden">
@@ -145,8 +145,8 @@ export default function About() {
                   <div className="space-y-0">
                     {[
                       ...t.about.phones.map((p) => ({ label: t.about.phone, value: p, dir: 'ltr' as const })),
-                      { label: t.about.email, value: t.about.emailValue },
-                      { label: t.about.address, value: t.about.addressValue },
+                      { label: t.about.email, value: t.about.emailValue, dir: 'ltr' as const },
+                      { label: t.about.address, value: t.about.addressValue, dir: 'rtl' as const },
                     ].map((item, i) => (
                       <div key={i} className={`flex items-center justify-between py-2.5 border-b border-neutral-800/30 last:border-0 ${align}`}>
                         <span className="text-sm text-neutral-400 font-light">{item.label}</span>

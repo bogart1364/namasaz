@@ -2,43 +2,6 @@ import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-function FloatingPlane({
-  position,
-  rotation,
-  args,
-  color = '#b8b4ac',
-  speed = 0.3,
-  amplitude = 0.15,
-}: {
-  position: [number, number, number];
-  rotation: [number, number, number];
-  args: [number, number];
-  color?: string;
-  speed?: number;
-  amplitude?: number;
-}) {
-  const ref = useRef<THREE.Mesh>(null);
-  const initialY = position[1];
-
-  useFrame((state) => {
-    if (ref.current) {
-      ref.current.position.y = initialY + Math.sin(state.clock.getElapsedTime() * speed) * amplitude;
-    }
-  });
-
-  return (
-    <mesh ref={ref} position={position} rotation={rotation} receiveShadow>
-      <planeGeometry args={args} />
-      <meshStandardMaterial
-        color={color}
-        roughness={0.9}
-        metalness={0.05}
-        side={THREE.DoubleSide}
-      />
-    </mesh>
-  );
-}
-
 function WireframeBox({
   position,
   args,

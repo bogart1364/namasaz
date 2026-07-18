@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useLang } from '../../i18n/LanguageContext';
 
 export default function Footer() {
-  const { t, align, alignEnd } = useLang();
+  const { t } = useLang();
 
   return (
     <footer id="footer" className="relative w-full bg-[#050505] z-20">
