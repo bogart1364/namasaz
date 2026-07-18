@@ -90,8 +90,8 @@ export default function InquiryForm({ open, onClose, productName }: InquiryFormP
                 <h2 className="text-lg font-normal text-white tracking-tight">{labels.title}</h2>
                 <p className="text-[11px] text-neutral-500 font-light mt-1">{labels.subtitle}</p>
               </div>
-              <button onClick={onClose} className="w-8 h-8 flex items-center justify-center bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-pointer">
-                <svg className="w-3 h-3 text-white/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <button onClick={onClose} className="w-9 h-9 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all cursor-pointer">
+                <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <line x1="4" y1="4" x2="20" y2="20" />
                   <line x1="20" y1="4" x2="4" y2="20" />
                 </svg>
@@ -149,7 +149,7 @@ export default function InquiryForm({ open, onClose, productName }: InquiryFormP
                   />
                 </div>
 
-                <button type="submit" className="w-full py-4 bg-white text-black text-[11px] tracking-[0.2em] font-mono hover:bg-neutral-200 transition-all mt-2">
+                <button type="submit" className="w-full py-4 border border-neutral-600 hover:border-[#c0392b] text-white text-[11px] tracking-[0.2em] font-mono hover:bg-[#c0392b]/10 transition-all mt-2 cursor-pointer">
                   {labels.submit}
                 </button>
               </form>
