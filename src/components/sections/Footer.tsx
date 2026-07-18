@@ -38,19 +38,19 @@ export default function Footer() {
         <div className="py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center md:text-left">
             <h4 className="text-[10px] tracking-[0.25em] text-neutral-500 uppercase mb-4 font-mono">{t.footer.social}</h4>
-            <div className="flex flex-col gap-2">
-              {t.footer.socialLinks.map((s, i) => (
-                <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-neutral-500 hover:text-white transition-colors justify-center md:justify-start font-light">
-                  <span className="text-neutral-700">
-                    {i === 0 && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="5" /></svg>}
-                    {i === 1 && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>}
-                    {i === 2 && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>}
-                    {i === 3 && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>}
-                  </span>
-                  <span>{s.name}</span>
-                </a>
-              ))}
-            </div>
+              <div className="flex flex-col gap-2">
+                {t.footer.socialLinks.map((s, i) => (
+                  <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-neutral-500 hover:text-white transition-colors justify-center md:justify-start font-light">
+                    <span className="text-neutral-700">
+                      {s.en === 'Instagram' && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><line x1="17.5" y1="6.5" x2="17.5" y2="6.5" /></svg>}
+                      {s.en === 'Telegram' && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.6 18.2 19.3c-.25 1.07-.92 1.33-1.86.83l-5.15-3.8-2.49 2.4c-.27.27-.5.5-1.03.5l.37-5.3 9.66-8.72c.42-.38-.09-.59-.65-.21L6.16 13.2l-5.2-1.63c-1.13-.35-1.15-1.13.24-1.67L20.4 2.9c.94-.35 1.76.21 1.54 1.7z" /></svg>}
+                      {s.en === 'X' && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>}
+                      {s.en === 'LinkedIn' && <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.9H5.67v8.44h2.67zM7 8.6a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.74v-4.63c0-2.47-1.32-3.62-3.08-3.62-1.42 0-2.06.78-2.42 1.33V9.9h-2.67c.04.75 0 8.44 0 8.44h2.67v-4.71c0-.24.02-.48.09-.65.19-.48.63-.98 1.37-.98.97 0 1.36.74 1.36 1.82v4.52h2.68z" /></svg>}
+                    </span>
+                    <span>{s.name}</span>
+                  </a>
+                ))}
+              </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="text-center md:text-left">
