@@ -9,11 +9,13 @@ import Products from './components/sections/Products';
 import AllProducts from './components/sections/AllProducts';
 import About from './components/sections/About';
 import Articles from './components/sections/Articles';
+import AllArticles from './components/sections/AllArticles';
 import Footer from './components/sections/Footer';
 
 export default function App() {
   const [showAllProducts, setShowAllProducts] = useState(false);
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
+  const [showAllArticles, setShowAllArticles] = useState(false);
 
   const openAllProducts = (productId?: string) => {
     setSelectedProductId(productId);
@@ -42,7 +44,7 @@ export default function App() {
           <Projects />
           <Products onOpenAll={openAllProducts} />
           <About />
-          <Articles />
+          <Articles onOpenAll={() => setShowAllArticles(true)} />
           <Footer />
         </div>
 
@@ -50,6 +52,13 @@ export default function App() {
         <AnimatePresence>
           {showAllProducts && (
             <AllProducts onClose={closeAllProducts} initialProductId={selectedProductId} />
+          )}
+        </AnimatePresence>
+
+        {/* All Articles page */}
+        <AnimatePresence>
+          {showAllArticles && (
+            <AllArticles onClose={() => setShowAllArticles(false)} />
           )}
         </AnimatePresence>
       </div>

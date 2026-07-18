@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 import ArticleDetail from './ArticleDetail';
@@ -17,11 +17,9 @@ const v = {
   visible: (i: number) => ({ opacity: 1, y: 0, transition: { duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] } }),
 };
 
-export default function Articles() {
+export default function Articles({ onOpenAll }: { onOpenAll: () => void }) {
   const { t, align, alignEnd } = useLang();
   const [sel, setSel] = useState<Article | null>(null);
-  const [allOpen, setAllOpen] = useState(false);
-  const [fromAll, setFromAll] = useState(false);
 
   const articleImages = [
     '/assets/renders/article-01.svg',
@@ -58,7 +56,7 @@ export default function Articles() {
               <h2 className="text-4xl md:text-5xl font-extralight text-white tracking-tight">{t.articles.title}</h2>
               <div className="w-12 h-[1px] bg-neutral-600 mt-5 mx-auto md:ml-0 md:mr-auto" />
             </div>
-            <button onClick={() => setAllOpen(true)} className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] text-neutral-400 hover:text-white transition-colors group mt-6 md:mt-0 cursor-pointer">
+            <button onClick={onOpenAll} className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] text-neutral-400 hover:text-white transition-colors group mt-6 md:mt-0 cursor-pointer">
               {t.articles.viewAll}
               <span className="w-6 h-[1px] bg-neutral-600 group-hover:w-10 group-hover:bg-white transition-all duration-300" />
             </button>
@@ -112,47 +110,7 @@ export default function Articles() {
           </div>
         </div>
       </section>
-      <ArticleDetail
-        article={sel}
-        onClose={() => { setSel(null); setFromAll(false); }}
-        onBackToAll={fromAll ? () => { setSel(null); setFromAll(false); setAllOpen(true); } : undefined}
-      />
-
-      <AnimatePresence>
-        {allOpen && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[90] bg-[#0a0a0a] overflow-y-auto" style={{ scrollbarWidth: 'none' }}>
-            <style>{`div::-webkit-scrollbar { display: none; }`}</style>
-            <button onClick={() => setAllOpen(false)} className="fixed top-20 left-6 z-[110] flex items-center gap-2 text-[11px] tracking-[0.15em] text-neutral-400 font-mono hover:text-white transition-colors group cursor-pointer">
-              {t.articles.allArticles}
-              <svg className="w-3.5 h-3.5 rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
-            </button>
-            <div className="max-w-6xl mx-auto px-6 md:px-12 pt-44 pb-24">
-              <span className="text-[10px] tracking-[0.25em] text-neutral-500 block mb-4 font-mono uppercase">{t.articles.label}</span>
-              <h2 className="text-3xl md:text-5xl font-extralight text-white tracking-tight mb-12">{t.articles.title}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {articles.map((a) => (
-                  <motion.article key={a.id} whileHover={{ y: -4 }} onClick={() => { setAllOpen(false); setFromAll(true); setSel(a); }} className="group cursor-pointer border border-neutral-800/30 hover:border-neutral-700/50 transition-colors duration-500">
-                    <div className="aspect-[4/3] w-full relative overflow-hidden bg-neutral-900">
-                      <img src={a.image} alt={a.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-                      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
-                    </div>
-                    <div className={`p-5 ${align}`}>
-                      <span className="text-[10px] tracking-[0.15em] text-neutral-600 font-mono">{a.category}</span>
-                      <h4 className="text-base font-light text-neutral-200 mt-1.5 mb-1.5 leading-[1.8] group-hover:text-white transition-colors">{a.title}</h4>
-                      <p className="text-xs text-neutral-500 font-light">{a.subtitle}</p>
-                      <div className={`mt-3 flex items-center gap-2 ${alignEnd}`}>
-                        <span className="text-[10px] text-neutral-600 font-mono">{a.readTime} {t.articles.readTime}</span>
-                        <span className="w-1 h-1 rounded-full bg-neutral-700" />
-                        <span className="text-[10px] text-neutral-600 font-mono">{a.date}</span>
-                      </div>
-                    </div>
-                  </motion.article>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <ArticleDetail article={sel} onClose={() => setSel(null)} />
     </>
   );
 }
