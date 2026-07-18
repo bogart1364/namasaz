@@ -17,11 +17,11 @@ export default function Articles() {
   const [sel, setSel] = useState<Article | null>(null);
 
   const articleImages = [
-    'https://images.unsplash.com/photo-1515263487990-61b07816b324?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=600&fit=crop',
+    '/assets/renders/article-01.svg',
+    '/assets/renders/article-02.svg',
+    '/assets/renders/article-03.svg',
+    '/assets/renders/article-04.svg',
+    '/assets/renders/article-05.svg',
   ];
 
   const articles: Article[] = t.articles.data.map((a, i) => ({ ...a, image: articleImages[i] }));
