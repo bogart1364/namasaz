@@ -29,7 +29,13 @@ export default function Navigation({ onProductsClick }: NavigationProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 80);
+    const el = document.getElementById('scroll-container');
+    const handleScroll = () => setScrolled((el?.scrollTop ?? window.scrollY) > 80);
+    if (el) {
+      el.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+      return () => el.removeEventListener('scroll', handleScroll);
+    }
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -43,7 +49,7 @@ export default function Navigation({ onProductsClick }: NavigationProps) {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-black/70 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-[#0a0a0a]/85 backdrop-blur-md border-b border-white/5' : 'bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/50 to-transparent backdrop-blur-sm'}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
           <a href="#" className="flex items-center gap-3 group">
             <LogoSVG className="w-10 h-10 md:w-12 md:h-12" logoSub={t.nav.logoSub} />
