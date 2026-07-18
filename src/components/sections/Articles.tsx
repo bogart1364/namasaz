@@ -90,7 +90,7 @@ export default function Articles() {
 
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-            {articles.slice(1).map((a, i) => (
+            {articles.slice(1, 6).map((a, i) => (
               <motion.article key={a.id} custom={i + 1} variants={v} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="group cursor-pointer" onClick={() => setSel(a)}>
                 <div className="aspect-[4/3] w-full relative overflow-hidden mb-3 bg-neutral-900">
                   <img src={a.image} alt={a.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
