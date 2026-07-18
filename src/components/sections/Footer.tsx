@@ -13,7 +13,7 @@ export default function Footer() {
             {/* Brand */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center lg:text-left">
               <div className="flex items-center gap-3 mb-5 justify-center lg:justify-start">
-                <svg viewBox="0 0 48 48" className="w-10 h-10"><path d="M12 36V18L24 12L36 18V36H27V26H21V36H12Z" stroke="#c8c4bc" strokeWidth="1.5" fill="none" /></svg>
+                <img src="/logo.png" alt={t.footer.brand} className="h-10 w-auto object-contain" />
                 <div className="text-center lg:text-left">
                   <span className="text-white text-lg font-light block leading-tight">{t.footer.brand}</span>
                   <span className="text-[9px] tracking-[0.3em] text-neutral-600 block">{t.footer.brandSub}</span>
