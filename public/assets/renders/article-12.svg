@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><g stroke='#3a3733' stroke-width='1.5' fill='none'>
+<line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/></g>
+<g fill='none'>
+<circle cx='360' cy='360' r='80' stroke='#b8b4ac' stroke-width='2' opacity='0.7'/>
+<circle cx='600' cy='360' r='80' stroke='#9c7b54' stroke-width='2' opacity='0.8'/>
+<circle cx='840' cy='360' r='80' stroke='#c0392b' stroke-width='2.5' opacity='0.9'/>
+<circle cx='480' cy='500' r='80' stroke='#a8a39b' stroke-width='2' opacity='0.7'/>
+<circle cx='720' cy='500' r='80' stroke='#6b665e' stroke-width='2' opacity='0.7'/>
+</g>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>

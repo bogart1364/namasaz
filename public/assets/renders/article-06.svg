@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/><g stroke='#6b665e' stroke-width='2' fill='none'>
+<rect x='300' y='220' width='600' height='420'/>
+<line x1='300' y1='220' x2='900' y2='220' stroke='#b8b4ac' stroke-width='2' opacity='0.6'/>
+</g>
+<line x1='350' y1='220' x2='310' y2='640' stroke='#b8b4ac' stroke-width='1.2' opacity='0.18'/>
+<line x1='450' y1='220' x2='410' y2='640' stroke='#b8b4ac' stroke-width='1.2' opacity='0.18'/>
+<line x1='550' y1='220' x2='510' y2='640' stroke='#b8b4ac' stroke-width='1.2' opacity='0.18'/>
+<line x1='650' y1='220' x2='610' y2='640' stroke='#b8b4ac' stroke-width='1.2' opacity='0.18'/>
+<line x1='750' y1='220' x2='710' y2='640' stroke='#b8b4ac' stroke-width='1.2' opacity='0.18'/>
+<line x1='600' y1='220' x2='600' y2='640' stroke='#c0392b' stroke-width='3' opacity='0.7'/>
+<circle cx='600' cy='210' r='30' fill='none' stroke='#c0392b' stroke-width='2' opacity='0.9'/>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>

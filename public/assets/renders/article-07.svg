@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/><g stroke='#6b665e' stroke-width='2' fill='none'>
+<rect x='200' y='400' width='200' height='190'/>
+<path d='M200 400 L 300 340 L 400 400 Z'/>
+<rect x='500' y='400' width='200' height='190'/>
+<path d='M500 400 L 600 340 L 700 400 Z'/>
+<rect x='800' y='400' width='200' height='190'/>
+<path d='M800 400 L 900 340 L 1000 400 Z'/>
+</g>
+<g stroke='#9c7b54' stroke-width='2' opacity='0.8' fill='none'>
+<line x1='200' y1='430' x2='400' y2='430'/>
+<line x1='200' y1='470' x2='400' y2='470'/>
+<line x1='200' y1='510' x2='400' y2='510'/>
+<line x1='200' y1='550' x2='400' y2='550'/>
+<line x1='500' y1='430' x2='700' y2='430'/>
+<line x1='500' y1='470' x2='700' y2='470'/>
+<line x1='500' y1='510' x2='700' y2='510'/>
+<line x1='500' y1='550' x2='700' y2='550'/>
+<line x1='800' y1='430' x2='1000' y2='430'/>
+<line x1='800' y1='470' x2='1000' y2='470'/>
+<line x1='800' y1='510' x2='1000' y2='510'/>
+<line x1='800' y1='550' x2='1000' y2='550'/>
+</g>
+<polyline points='120,600 400,560 700,600 1000,560 1140,600' fill='none' stroke='#3a3733' stroke-width='1.5'/>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>

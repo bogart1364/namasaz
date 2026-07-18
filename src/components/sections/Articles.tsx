@@ -28,6 +28,21 @@ export default function Articles() {
     '/assets/renders/article-03.svg',
     '/assets/renders/article-04.svg',
     '/assets/renders/article-05.svg',
+    '/assets/renders/article-06.svg',
+    '/assets/renders/article-07.svg',
+    '/assets/renders/article-08.svg',
+    '/assets/renders/article-09.svg',
+    '/assets/renders/article-10.svg',
+    '/assets/renders/article-11.svg',
+    '/assets/renders/article-12.svg',
+    '/assets/renders/article-13.svg',
+    '/assets/renders/article-14.svg',
+    '/assets/renders/article-15.svg',
+    '/assets/renders/article-16.svg',
+    '/assets/renders/article-17.svg',
+    '/assets/renders/article-18.svg',
+    '/assets/renders/article-19.svg',
+    '/assets/renders/article-20.svg',
   ];
 
   const articles: Article[] = t.articles.data.map((a, i) => ({ ...a, image: articleImages[i] }));

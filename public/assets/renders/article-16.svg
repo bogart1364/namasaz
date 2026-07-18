@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/><g stroke='#6b665e' stroke-width='2' fill='none'>
+<rect x='300' y='240' width='360' height='400'/>
+<path d='M300 240 L480 180 L660 240 Z'/>
+</g>
+<g stroke='#9c7b54' stroke-width='2' opacity='0.8' stroke-dasharray='8 6' fill='none'>
+<rect x='540' y='320' width='340' height='320'/>
+<line x1='540' y1='320' x2='880' y2='480'/>
+<line x1='880' y1='320' x2='540' y2='480'/>
+</g>
+<rect x='440' y='460' width='120' height='140' fill='none' stroke='#c0392b' stroke-width='2.5' opacity='0.85'/>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>

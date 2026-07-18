@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/><g stroke='#6b665e' stroke-width='2' fill='none'>
+<rect x='260' y='300' width='680' height='300'/>
+<line x1='260' y1='420' x2='940' y2='420' stroke='#9c7b54' stroke-width='2' opacity='0.8'/>
+<line x1='373' y1='420' x2='373' y2='600'/>
+<line x1='486' y1='420' x2='486' y2='600'/>
+<line x1='599' y1='420' x2='599' y2='600'/>
+<line x1='712' y1='420' x2='712' y2='600'/>
+<line x1='825' y1='420' x2='825' y2='600'/>
+</g>
+<rect x='540' y='350' width='160' height='70' fill='none' stroke='#c0392b' stroke-width='2.5' opacity='0.85'/>
+<rect x='160' y='640' width='880' height='2' stroke='#a8a39b' stroke-width='1.5' opacity='0.4'/>
+<polyline points='160,685 400,670 600,685 800,670 1040,685' fill='none' stroke='#3a3733' stroke-width='1.5' opacity='0.7'/>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>

@@ -524,6 +524,321 @@ const translations = {
               'وقتی بتن، چوب و فولاد در کنار هم قرار می‌گیرند، هر یک ضعف دیگری را می‌پوشانند و قدرت یکدیگر را آشکار می‌کنند — و این همان روح معماری نماساز است.',
             ]},
           ] },
+        { id: 6, title: 'نورپردازی در معماری داخلی', subtitle: 'Interior Lighting', category: 'طراحی داخلی', readTime: '۹', date: '۱۴۰۳/۰۴',
+          content: ['نورپردازی لایه‌ای، فضا را از تاریکی محض به نمایشی از حجم و بافت بدل می‌کند.'],
+          tags: ['نورپردازی', 'دکوراسیون', 'حس فضا'],
+          body: [
+            { heading: 'لایه‌بندی نور', paragraphs: [
+              'یک فضای موفق حداقل سه لایه نور دارد: عمومی برای دید کلی، وظیفه‌ای برای کار، و تاکیدی برای نمایش فرم‌ها. ترکیب این لایه‌ها با دیمر، کنترل کامل حس فضا را در ساعات شبانه‌روز ممکن می‌سازد.',
+              'نورپردازی نمایی (گرافیکی) با استفاده از نوارهای LED پنهان، لبه‌های معماری را در شب آشکار می‌کند و عمقی دراماتیک می‌آفریند.',
+            ]},
+            { heading: 'رنگ نور و دما', paragraphs: [
+              'دمای رنگ نور (کلوین) تعیین‌کننده حال‌وهواست: نور گرم (۲۷۰۰–۳۰۰۰ کلوین) برای نشیمن و استراحت، و نور سردتر (۴۰۰۰ کلوین به بالا) برای آشپزخانه و کار.',
+              'ترکیب نور گرم و سرد در یک فضا، با تفکیک مناطق عملکردی، تجربه‌ای لایه‌دار و حرفه‌ای می‌سازد.',
+            ]},
+            { heading: 'سایه و بافت', paragraphs: [
+              'نور تنها روشنایی نیست، بلکه ابزار نمایش بافت است. نور زاویه‌دار روی دیوار بتنی یا چوب، دانه‌ها و ناصافی‌ها را زنده می‌کند.',
+              'در طراحی داخلی نماساز، ما نور را برای برجسته کردن مصالح دست‌ساخته — چوب تراش‌خورده و بتن بافت‌دار — به کار می‌گیریم تا اصالت متریال حس شود.',
+            ]},
+            { heading: 'صرفه‌جویی در انرژی', paragraphs: [
+              'لامپ‌های LED با بازده بالا و سیستم‌های هوشمند حضور، مصرف را به شدت کاهش می‌دهند. هم‌راستایی نورپردازی با نور روز، نیاز به روشنایی مصنوعی را در روز به صفر می‌رساند.',
+              'طراحی نور در خدمت معماری است؛ نه تزیین، بلکه بخشی از زبان فضایی که حجم، متریال و حس را یکپارچه می‌کند.',
+            ]},
+          ] },
+        { id: 7, title: 'معماری خانه‌های چوبی شمال', subtitle: 'Northern Wooden Homes', category: 'مسکونی', readTime: '۱۱', date: '۱۴۰۳/۰۳',
+          content: ['چوب، متریال مأنوس شمال است؛ خانه‌ای که با جنگل هم‌کلام باشد و در عین حال مدرن زیست کند.'],
+          tags: ['چوب', 'مسکونی', 'شمال'],
+          body: [
+            { heading: 'چرا چوب', paragraphs: [
+              'چوب گرم، سبک و منعطف است و در برابر زلزله رفتاری انعطاف‌پذیر دارد. در شمال ایران با جنگل‌های هیرکانی، دسترسی به چوب محلی هم اقتصادی و هم بومی است.',
+              'چوب رطوبت را تنظیم می‌کند و با عایق‌بندی مناسب، خانه‌ای پایدار در اقلیم مرطوب می‌سازد.',
+            ]},
+            { heading: 'ساختار و جزئیات', paragraphs: [
+              'سازه‌های چوبی از قاب‌بندی سبک تا دیوارهای Cross-Laminated (CLT) متنوع‌اند. جزئیات اتصال — میخ، پیچ یا سنتی‌ترین روش‌های نجاری — تعیین‌کننده کیفیت و عمر سازه‌اند.',
+              'در کارگاه نماساز، ترجیح بر اتصالات دست‌ساز و دیدنی است؛ جایی که محل اتصال بخشی از زیبایی می‌شود.',
+            ]},
+            { heading: 'ترکیب با شیشه و بتن', paragraphs: [
+              'چوب در کنار شیشه‌های قدی، مرز میان داخل و جنگل را محو می‌کند. بتن اکسپوز در پایه‌ها، پایداری را به گرمای چوب می‌بخشد.',
+              'این دیالوگ متریالی، امضای ویلاهای مدرن شمال ماست: طبیعت درون، و معماری در خدمت دید.',
+            ]},
+            { heading: 'نگهداری و ماندگاری', paragraphs: [
+              'استفاده از روغن طبیعی و محافظت در برابر حشرات و رطوبت، عمر چوب را چند برابر می‌کند. بازرسی دوره‌ای اتصالات، ایمنی سازه را تضمین می‌کند.',
+              'خانه چوبی با مراقبت، نه‌تنها فرسوده نمی‌شود بلکه با گذر زمان رنگ و کاراکتری عمیق‌تر می‌یابد.',
+            ]},
+          ] },
+        { id: 8, title: 'بتن و چوب: دیالوگ متریال‌ها', subtitle: 'Concrete & Wood Dialogue', category: 'متریال شناسی', readTime: '۱۰', date: '۱۴۰۳/۰۲',
+          content: ['بتن و چوب در دو سوی طیف‌اند؛ سرد و گرم، صلب و انعطاف‌پذیر، صنعتی و طبیعی. گفت‌وگوی آن‌ها معماری را می‌سازد.'],
+          tags: ['بتن', 'چوب', 'ترکیب'],
+          body: [
+            { heading: 'تضاد سازنده', paragraphs: [
+              'بتن نماد صلبیت و زمان معاصر است؛ چوب روایت طبیعت و گرمای انسانی. در کنار هم، هر یک کاستی دیگری را می‌پوشاند: سردی بتن با چوب، و بی‌قاعدگی چوب با نظم بتن.',
+              'این تضاد وقتی موفق است که با منطق روشنی تقسیم شود — مثلاً بتن در کف و چوب در سقف کاذب و مبلمان.',
+            ]},
+            { heading: 'جزئیات اتصال', paragraphs: [
+              'گذار میان دو متریال باید با احترام طراحی شود: درزهای دقیق، پروفیل‌های فلزی و انبساط حرارتی در نظر گرفته شود.',
+              'در پروژه‌های نماساز، خط تماس بتن و چوب اغلب با یک نوار فولادی سیاه تأکید می‌شود تا مرزی تمیز و عاملی نمایشی پدید آید.',
+            ]},
+            { heading: 'حس و تجربه', paragraphs: [
+              'لمس چوب و دیدن بتن، تجربه‌ای چندحسی می‌سازد. فضا با بتن آرام و سنگین، و با چوب صمیمی و زنده می‌شود.',
+              'این همان روح مجموعه رستیک ماست: فضایی که هم ریشه در طبیعت دارد و هم بیان معاصر.',
+            ]},
+            { heading: 'پایداری ترکیب', paragraphs: [
+              'چوب با ردپای کربن پایین و بتن با عمر طولانی، ترکیبی پایدارند اگر بتن با نسبت سیمان بهینه و چوب از منابع گواهی‌شده تأمین شود.',
+              'انتخاب متریال محلی، هم ردپای حمل‌ونقل را کم می‌کند و هم پیوند بنا با اقلیم را استوار می‌سازد.',
+            ]},
+          ] },
+        { id: 9, title: 'طراحی نمای ساختمان', subtitle: 'Facade Design', category: 'نما', readTime: '۱۲', date: '۱۴۰۳/۰۱',
+          content: ['نما، نخستین روایت ساختمان است؛ پوسته‌ای که هویت، اقلیم و عملکرد را یکجا بیان می‌کند.'],
+          tags: ['نما', 'طراحی', 'اقلیم'],
+          body: [
+            { heading: 'نما به مثابه پوست', paragraphs: [
+              'نما نه صرفاً پوشش، بلکه لایه‌ای تعاملی است میان درون و بیرون. پنجره‌ها، سایه‌بان‌ها و بازشوها تعیین می‌کنند چقدر نور، دید و هوا وارد فضا شود.',
+              'نمای خوب، پاسخی به اقلیم است: بازشوهای وسیع رو به جنوب در زمستان، و سایه‌بان‌های بیرونی در تابستان.',
+            ]},
+            { heading: 'انتخاب متریال نما', paragraphs: [
+              'بتن، چوب، فلز، سنگ و سرامیک هر کدام بیان متفاوتی دارند. ترکیب آن‌ها در یک نما باید با منطق یکپارچه باشد نه تجمیع تصادفی.',
+              'در نماساز، نماهای ترکیبی چوب–بتن–فولاد هویت بصری پروژه را می‌سازند و با محیط شمال هم‌کلام‌اند.',
+            ]},
+            { heading: 'نسبت و مقیاس', paragraphs: [
+              'تقسیم‌بندی نما — شبکه‌بندی، ریتم بازشوها، و نسبت پر و خالی — تعیین‌کننده سنگینی یا سبکی بنایند. ریتم منظم، آرامش؛ و تضاد، تأکید بصری می‌آفریند.',
+              'جزئیات لبه، درز قالب و نحوه نورگیری، کیفیت نهایی را از متوسط به حرفه‌ای ارتقا می‌دهند.',
+            ]},
+            { heading: 'پایداری نما', paragraphs: [
+              'عایق حرارتی نما، تأثیری مستقیم بر مصرف انرژی دارد. سیستم‌های ونته و عایق خارجی (ETICS)، گرمای تابستان و سرمای زمستان را مهار می‌کنند.',
+              'نمایی موفق است که زیبا بماند، کم نیاز به نگهداری باشد و در برابر باران و رطوبت شمال مقاومت کند.',
+            ]},
+          ] },
+        { id: 10, title: 'معماری بروتالیسم', subtitle: 'Brutalism', category: 'سبک‌شناسی', readTime: '۹', date: '۱۴۰۲/۱۲',
+          content: ['بروتالیسم صداقت بتن است؛ معماری‌ای بی‌پیرایه که وزن، سایه و فرم را جشن می‌گیرد.'],
+          tags: ['بروتالیسم', 'بتن', 'سبک'],
+          body: [
+            { heading: 'فلسفه بتن خام', paragraphs: [
+              'بروتالیسم از واژه فرانسوی béton brut به معنای بتن خام ریشه می‌گیرد. جنبشی که پس از جنگ جهانی، صداقت سازه و ماده را بر تزیین ترجیح داد.',
+              'ساختمان‌های بروتال فرم‌های حجیم، سایه‌های عمیق و بافت قالب‌برجسته دارند — زیبایی‌ای که در صراحت نهفته است.',
+            ]},
+            { heading: 'ویژگی‌های بصری', paragraphs: [
+              'حجم‌های تندیس‌گونه، پله‌های نمایان، و شبکه‌بندی درشت بتن، نشانه‌های سبک‌اند. رنگ خاکستری بتن عمدی است و با زمان پاتینه می‌شود.',
+              'بروتالیسم باور دارد ساختمان باید چونان اثری حجیم و صریح بایستد، نه تظاهر به سبکی کند.',
+            ]},
+            { heading: 'بازخوانی معاصر', paragraphs: [
+              'بروتالیسم امروز با چاشنی چوب و گیاه، از سردی محض فاصله گرفته و انسانی‌تر شده است. ترکیب بتن با چوب، امضای بسیاری از استودیوهای مینیمال است.',
+              'در نماساز، ما از صراحت بروتالیسم در کنار گرمای رستیک بهره می‌بریم تا فضایی هم قاطع و هم صمیمی پدید آید.',
+            ]},
+            { heading: 'نقد و میراث', paragraphs: [
+              'بروتالیسم به بی‌توجهی به بافت شهری و سختی نگهداری نقد شده است؛ اما میراث آن — شجاعت در فرم و صداقت در متریال — همچنان الهام‌بخش است.',
+              'بازآفرینی ساختمان‌های بروتال قدیمی، راهی برای حفظ حافظه شهری در کنار نوسازی است.',
+            ]},
+          ] },
+        { id: 11, title: 'طراحی فضاهای کوچک هوشمند', subtitle: 'Small Smart Spaces', category: 'مسکونی', readTime: '۱۰', date: '۱۴۰۲/۱۱',
+          content: ['در فضای کوچک، هر سانتی‌متر فرصت است؛ طراحی چندعملکردی کیفیت زندگی را بیشتر از متراژ می‌سازد.'],
+          tags: ['فضای کوچک', 'چندعملکردی', 'مسکونی'],
+          body: [
+            { heading: 'چیدمان چندعملکردی', paragraphs: [
+              'مبلمان تاشو، کمدهای دیواری و میزهای پنهان، یک فضا را به چند اتاق تبدیل می‌کنند. کم‌ترین متراژ با بیشترین انعطاف، هدف است.',
+              'تفکیک فضا با کمدهای بلند به جای دیوار، عمق بصری می‌آفریند بی‌آنکه نور را ببندد.',
+            ]},
+            { heading: 'نور و رنگ', paragraphs: [
+              'رنگ‌های روشن و بازتابنده، فضا را بزرگ‌تر نشان می‌دهند. آینه و سطوح براق، عمقی موهوم می‌آفرینند.',
+              'نور یکنواخت و پنجره‌های بلند، سقف را سبک‌تر و اتاق را گشادتر می‌کنند.',
+            ]},
+            { heading: 'انبارش هوشمند', paragraphs: [
+              'انبارش زیر پله، در کف و در ارتفاع، فضای زندگی را آزاد می‌کند. سیستم‌های ماژولار اجازه تغییر با نیاز را می‌دهند.',
+              'در آپارتمان‌های کوچک شهری، کمدهای دیواری تمام‌قد با درب‌های هم‌رنگ دیوار، نظمی نامرئی می‌سازند.',
+            ]},
+            { heading: 'حس فضا، نه متراژ', paragraphs: [
+              'کیفیت زندگی در کوچکی با حذف زوائد و تمرکز بر ضروریات بالا می‌رود. فضایی که هر شیء جایی دارد، بزرگ‌تر حس می‌شود.',
+              'طراحی کوچک هوشمند، هنر فشردگی بی‌فشار است — نه تنگنا، بلکه انضباطی رهایی‌بخش.',
+            ]},
+          ] },
+        { id: 12, title: 'رنگ در معماری', subtitle: 'Color in Architecture', category: 'طراحی', readTime: '۸', date: '۱۴۰۲/۱۰',
+          content: ['رنگ نخستین چیزی است که فضا را فریاد می‌زند یا در سکوت نگه می‌دارد؛ ابزاری نامرئی با اثری ژرف.'],
+          tags: ['رنگ', 'روان‌شناسی', 'طراحی'],
+          body: [
+            { heading: 'روان‌شناسی رنگ', paragraphs: [
+              'رنگ‌های خنثی (سیاه، سفید، خاکستری) حس بنیادین و ماندگار می‌سازند؛ رنگ‌های گرم صمیمیت، و رنگ‌های سرد آرامش و فاصله می‌آورند.',
+              'در معماری مینیمال، رنگ‌های خنثی بستر می‌شوند و یک رنگ تأکیدی (چون سرخ نماساز) فضا را زنده می‌کند.',
+            ]},
+            { heading: 'رنگ و نور', paragraphs: [
+              'رنگ در نورهای مختلف متفاوت دیده می‌شود؛ سطحی خاکستری زیر نور گرم طلایی، و زیر نور سرد آبی، دو حس متفاوت دارد.',
+              'طراح پیش از انتخاب رنگ، نورپردازی فضا را در نظر می‌گیرد تا رنگ در ساعات مختلف وفادار بماند.',
+            ]},
+            { heading: 'رنگ متریال', paragraphs: [
+              'بسیاری از رنگ‌ها از خود متریال می‌آیند: قهوه‌ای چوب، خاکستری بتن، و سیاه فولاد. احترام به رنگ طبیعی متریال، اصالت فضا را حفظ می‌کند.',
+              'استفاده از رنگ مصنوعی باید با احتیاط باشد تا بر بافت متریال سایه نیندازد.',
+            ]},
+            { heading: 'هویت بصری', paragraphs: [
+              'یک رنگ امضا (مانند سرخ نماساز) در کنار خنثی‌ها، برند بصری استودیو را می‌سازد و پیوستگی میان پروژه‌ها برقرار می‌کند.',
+              'رنگ در معماری، مانند امضای یک نقاش، بیانِ هویت است.',
+            ]},
+          ] },
+        { id: 13, title: 'حیاط مرکزی ایرانی', subtitle: 'Iranian Courtyard', category: 'معماری ایرانی', readTime: '۱۱', date: '۱۴۰۲/۰۹',
+          content: ['حیاط مرکزی، قلب خانه ایرانی است؛ فضایی درون‌گرا که نور، آب و سایه را گرداگرد خود جمع می‌کند.'],
+          tags: ['حیاط', 'معماری ایرانی', 'سنت'],
+          body: [
+            { heading: 'منطق درون‌گرایی', paragraphs: [
+              'خانه ایرانی رو به کوچه دیواری ساده دارد و تمام شکوه را درون — در حیاط — پنهان می‌کند. این درون‌گرایی، حریم و آرامش را تضمین می‌کرد.',
+              'حیاط مرکزی تهویه طبیعی و نور یکنواخت می‌ساخت و در عین حال خصوصی‌ترین فضای خانه بود.',
+            ]},
+            { heading: 'آب و سایه', paragraphs: [
+              'حوض میان حیاط، تنظیم‌کننده رطوبت و آینه آسمان بود. ایوان و ستون‌های چوبی، سایه‌ای پلکانی می‌ساختند که با حرکت خورشید جابه‌جا می‌شد.',
+              'درخت میوه در گوشه حیاط، بوی فصل و حس زندگی می‌آورد.',
+            ]},
+            { heading: 'بازخوانی معاصر', paragraphs: [
+              'الگوی حیاط را می‌توان با ویلای مدرن امروز هم‌کلام کرد: حیاط سبز مرکزی با استخر کوچک، جایگزین حوض سنتی.',
+              'در پروژه‌های شمال، حیاط سبز میانه، پیوندی میان اتاق‌ها و طبیعت برقرار می‌سازد.',
+            ]},
+            { heading: 'حافظه و هویت', paragraphs: [
+              'حیاط مرکزی بخشی از حافظه جمعی ماست. بازخوانی آن نه تقلید فرم، بلکه زنده‌کردن منطق زندگی درون‌گرا و پیوند با طبیعت است.',
+              'معماری که ریشه در این الگو دارد، هم ایرانی است و هم امروزی.',
+            ]},
+          ] },
+        { id: 14, title: 'معماری داخلی مینیمال', subtitle: 'Minimal Interior', category: 'طراحی داخلی', readTime: '۹', date: '۱۴۰۲/۰۸',
+          content: ['مینیمالیسم نه خالی‌کردن، بلکه رسیدن به جوهره است؛ فضایی که در آن کمتر، بیشتر معناست.'],
+          tags: ['مینیمال', 'دکوراسیون', 'سادگی'],
+          body: [
+            { heading: 'کمتر، بیشتر', paragraphs: [
+              'مینیمالیسم با حذف زوائد، بر جوهر فضا تمرکز می‌کند. هر عنصر باید دلیلی بر حضور داشته باشد؛ بی‌دلیلی، بار محسوب می‌شود.',
+              'سطوح صاف، خطوط تمیز و بازتاب نور، آرامشی عمیق می‌آفرینند.',
+            ]},
+            { heading: 'متریال و بافت', paragraphs: [
+              'در مینیمال، متریال خود بازیگر اصلی‌اند. بتن، چوب و فولاد با بافت طبیعی، بدون تزیین اضافه، فضا را غنی می‌کنند.',
+              'تضاد بافت — صیقل بتن در برابر گرمای چوب — جایگزین رنگ‌ها و الگوهای شلوغ می‌شود.',
+            ]},
+            { heading: 'نور و فضا', paragraphs: [
+              'نور طبیعی در مینیمال حیاتی است؛ پنجره‌های بزرگ و دیوارهای سفید، نور را به عنصری ساختاری بدل می‌کنند.',
+              'فضای خالی خود بخشی از طراحی است — سکوت بصری که چشم را می‌آرامد.',
+            ]},
+            { heading: 'انضباط و زندگی', paragraphs: [
+              'مینیمالیسم انضباط زندگی می‌طلبد؛ اما پاداشش فضایی است که ذهن را رها می‌کند. در نماساز، مینیمال رستیک ما با چاشنی دست‌ساز، سردی مینیمال را می‌شکند.',
+              'کمال در حذف نیست، در انتخاب درست است.',
+            ]},
+          ] },
+        { id: 15, title: 'صنعت و معماری', subtitle: 'Industry & Architecture', category: 'صنعتی', readTime: '۱۰', date: '۱۴۰۲/۰۷',
+          content: ['کارخانه نیز معماری است؛ سازه‌ای که عملکرد، ساختار و زیبایی را در خدمت تولید یکپارچه می‌کند.'],
+          tags: ['صنعتی', 'سازه', 'عملکرد'],
+          body: [
+            { heading: 'فرم تابع عملکرد', paragraphs: [
+              'در معماری صنعتی، فرم از فرآیند تولید زاده می‌شود: دهانه‌های وسیع، سوله‌های فلزی و نورگیرهای سقفی. زیبایی در کارایی نهفته است.',
+              'سادگی سازه صنعتی، الهام‌بخش بسیاری از سبک‌های مدرن از بروتالیسم تا مینیمال بوده است.',
+            ]},
+            { heading: 'سازه و متریال', paragraphs: [
+              'فولاد و بتن مسلح، ستون‌های معماری صنعتی‌اند؛ دهانه‌های بزرگ بی‌ستون میانی را ممکن می‌سازند.',
+              'در نمای کارخانه سیم‌وکابل آمل، ترکیب پروفیل فلزی و ورق آلومینیوم، بیان صنعتی و معاصر را پدید آورد.',
+            ]},
+            { heading: 'بازآفرینی صنعتی', paragraphs: [
+              'کارخانه‌های متروک با حفظ سازه و افزودن لایه‌ای مدرن، به فضاهای فرهنگی یا کارگاهی بدل می‌شوند. این بازآفرینی، حافظه صنعتی شهر را زنده نگه می‌دارد.',
+              'صداقت سازه صنعتی، با طراحی معاصر پیوندی اصیل می‌یابد.',
+            ]},
+            { heading: 'معماری و تولید', paragraphs: [
+              'کارگاه نماساز خود ترکیبی از معماری و تولید است؛ جایی که طرح روی میز، با دست روی چوب و فلز یکی می‌شود.',
+              'پیوند میان طراحی و ساخت، کیفیتی می‌سازد که تنها در کارگاه‌های دست‌ساز ممکن است.',
+            ]},
+          ] },
+        { id: 16, title: 'بازسازی بناهای قدیمی', subtitle: 'Renovation', category: 'بازسازی', readTime: '۱۲', date: '۱۴۰۲/۰۶',
+          content: ['بازسازی، گفت‌وگوی معمار امروز با بنای دیروز است؛ نه ویرانگری، بلکه هم‌زیستی لایه‌های زمان.'],
+          tags: ['بازسازی', 'مرمت', 'حافظه'],
+          body: [
+            { heading: 'احترام به لایه‌ها', paragraphs: [
+              'بنای قدیمی روایتی از زمان دارد. بازسازی موفق لایه‌های تاریخی را حفظ و لایه‌ای معاصر با احترام بر آن می‌نشاند.',
+              'تضاد میان قدیم و جدید، وقتی با صراحت طراحی شود، زیبایی‌ای در جدال زمان می‌آفریند.',
+            ]},
+            { heading: 'سازه و ایمنی', paragraphs: [
+              'نخستین گام، ارزیابی سازه و تقویت پی و دیوارهاست. ایمن‌سازی در برابر زلزله، پیش‌شرط هر بازسازی است.',
+              'فناوری‌های نوین — الیاف کربن، مهاربندهای پنهان — استحکام را بی‌تغییر در فرم تاریخی تأمین می‌کنند.',
+            ]},
+            { heading: 'به‌روزرسانی خدمات', paragraphs: [
+              'تأسیسات، عایق و نورپردازی باید با استاندارد امروز هم‌خوان شوند، بی‌آنکه روح بنا تغییر کند.',
+              'گرمایش کف، عایق پنهان و نورپردازی ملایم، آسایش را بی‌تغییر در ظاهر قدیمی می‌آورند.',
+            ]},
+            { heading: 'هویت و حافظه', paragraphs: [
+              'بازسازی خوب، حافظه شهری را نگه می‌دارد. بنایی که بازمی‌زید، داستان محله را ادامه می‌دهد نه پاک می‌کند.',
+              'در نماساز، ما بازسازی را فرصتی برای آشتی میان اصالت و زندگی امروز می‌بینیم.',
+            ]},
+          ] },
+        { id: 17, title: 'معماری پایدار و انرژی خورشیدی', subtitle: 'Solar & Sustainability', category: 'پایداری', readTime: '۱۳', date: '۱۴۰۲/۰۵',
+          content: ['خورشید مهمان همیشگی سرزمین ماست؛ معماری پایدار، خانه‌ای است که با این مهمان کنار بیاید.'],
+          tags: ['خورشید', 'انرژی', 'پایداری'],
+          body: [
+            { heading: 'خورشید در خدمت ساختمان', paragraphs: [
+              'با بیش از ۳۰۰ روز آفتابی، ایران ظرفیتی استثنایی برای انرژی خورشیدی دارد. پنل‌های فتوولتائیک بر بام، بخش بزرگی از انرژی را تأمین می‌کنند.',
+              'گرمایش خورشیدی (آبگرمکن خورشیدی) نیز از دیرباز در معماری بومی حضور داشته است.',
+            ]},
+            { heading: 'طراحی غیرفعال', paragraphs: [
+              'پیش از انرژی فعال، طراحی غیرفعال کلید است: جهت‌گیری جنوبی، سایه‌بان تابستانه، و توده حرارتی (بتن) برای ذخیره گرمای شبانه.',
+              'پنجره‌های دوجداره و عایق، مرزی هوشمند میان داخل و اقلیم می‌سازند.',
+            ]},
+            { heading: 'ذخیره‌سازی و بازیافت', paragraphs: [
+              'بازیافت آب باران و خاکستری، مصرف آب را کاهش می‌دهد. ذخیره‌سازی گرما در کف، نوسان دما را مهار می‌کند.',
+              'مصالح بومی کم‌انرژی، ردپای کربن ساخت را به حداقل می‌رسانند.',
+            ]},
+            { heading: 'آینده انرژی', paragraphs: [
+              'ساختمان صفرانرژی (Net-Zero) دست‌یافتنی است: تولید انرژی در محل برابر با مصرف. این هدف با ترکیب طراحی غیرفعال و فناوری خورشیدی ممکن می‌شود.',
+              'معماری پایدار، مسئولیت ما در برابر نسل‌های آینده و این سرزمین خورشیدی است.',
+            ]},
+          ] },
+        { id: 18, title: 'طراحی ویلای مدرن', subtitle: 'Modern Villa Design', category: 'مسکونی', readTime: '۱۱', date: '۱۴۰۲/۰۴',
+          content: ['ویلای مدرن، تعادل میان حریم خصوصی و دید باز است؛ خانه‌ای که به طبیعت چشم دوخته بی‌آنکه خود را فاش کند.'],
+          tags: ['ویلا', 'مسکونی', 'مدرن'],
+          body: [
+            { heading: 'پیوند با طبیعت', paragraphs: [
+              'ویلای مدرن با شیشه‌های قدی و تراس‌های باز، مرز میان داخل و بیرون را محو می‌کند. استخر و فضای سبز، ادامه اتاق‌اند.',
+              'در شمال ایران، ویلا با چشم‌انداز جنگل و دریا، فرصتی برای معماریِ در خدمت دید است.',
+            ]},
+            { heading: 'حجم و متریال', paragraphs: [
+              'حجم‌های ساده بتنی با چوب و شیشه ترکیب می‌شوند. بازشوهای بزرگ نور را به درون فرا می‌خوانند و سایه‌بان‌ها از گرمای تابستان می‌کاهند.',
+              'متریال دست‌ساز — چوب تراش‌خورده و بتن بافت‌دار — هویت رستیک به ویلا می‌بخشند.',
+            ]},
+            { heading: 'جریان فضا', paragraphs: [
+              'طرح باز (Open-plan) میان نشیمن، آشپزخانه و تراس، زندگی مشترک را تسهیل می‌کند. حریم‌های خصوصی در طبقه بالا یا انتهایی جانمایی می‌شوند.',
+              'محوریت دید (به استخر یا باغ)، سازمان‌دهی فضا را هدایت می‌کند.',
+            ]},
+            { heading: 'آسایش و پایداری', paragraphs: [
+              'عایق‌بندی، نورپردازی لایه‌ای و سیستم تهویه طبیعی، آسایش بی‌وقفه می‌سازند.',
+              'ویلای مدرن نماساز، ترکیبی از لوکسِ بی‌تکلف و پایداری اقلیمی است.',
+            ]},
+          ] },
+        { id: 19, title: 'مبلمان رستیک دست‌ساز', subtitle: 'Handcrafted Rustic Furniture', category: 'محصولات', readTime: '۹', date: '۱۴۰۲/۰۳',
+          content: ['هر قطعه رستیک، روایتی از درخت و دست است؛ مبلمانی که با کارگاه زنده می‌شود نه کارخانه.'],
+          tags: ['مبلمان', 'رستیک', 'دست‌ساز'],
+          body: [
+            { heading: 'روح دست‌ساز', paragraphs: [
+              'در تضاد با تولید انبوه، مبلمان دست‌ساز اثری یگانه است. رد تیغه روی چوب، انحنای طبیعی ریشه، و وزن فلز سیاه، هر قطعه را بی‌همتا می‌کنند.',
+              'در کارگاه نماساز، طرح از روی برگه به روی میز نجاری منتقل می‌شود و در همین فاصله، قطعه شخصیت می‌گیرد.',
+            ]},
+            { heading: 'چوب و فلز', paragraphs: [
+              'ترکیب چوب گردو و فولاد سیاه، امضای مجموعه رستیک ماست. گرمای چوب با قاطعیت فلز، تعادلی مدرن–سنتی می‌سازد.',
+              'جزئیات اتصال دیدنی‌اند: پیچ‌های دستی، جوش‌های ظریف و لبه‌های صیقل‌نشده عمدی.',
+            ]},
+            { heading: 'پایداری و ماندگاری', paragraphs: [
+              'مبلمان دست‌ساز با مراقبت، نسل‌ها می‌ماند. روغن طبیعی، چوب را زنده نگه می‌دارد و ردپای کربن تولید را کم می‌کند.',
+              'انتخاب چوب محلی و برش‌های طبیعی (ریشه و گره)، هدررفت را به حداقل می‌رساند.',
+            ]},
+            { heading: 'مبلمان به مثابه معماری', paragraphs: [
+              'مبلمان رستیک ادامه زبان معماری ماست؛ همان صراحت متریال و صمیمیت بافت. قطعه‌ای که در فضا می‌نشیند، با دیوار و کف هم‌کلام است.',
+              'هر میز و صندلی، معماری‌ای کوچک در مقیاس انسان است.',
+            ]},
+          ] },
+        { id: 20, title: 'معماری و هویت محلی', subtitle: 'Architecture & Local Identity', category: 'معماری ایرانی', readTime: '۱۲', date: '۱۴۰۲/۰۲',
+          content: ['معماری بی‌هویت، تقلیدی بی‌ریشه است؛ معماری اصیل، از خاک و فرهنگ محل می‌روید.'],
+          tags: ['هویت', 'بومی', 'معماری ایرانی'],
+          body: [
+            { heading: 'ریشه در اقلیم', paragraphs: [
+              'اقلیم، نخستین معلم معمار است. بادگیر، شبستان، حیاط مرکزی و خشت، هر یک پاسخی بومی به اقلیم ایران‌اند.',
+              'معماری که اقلیم را نادیده بگیرد، ناگزیر به انرژی مصنوعی وابسته می‌شود و هویتش را از دست می‌دهد.',
+            ]},
+            { heading: 'فرهنگ و حافظه', paragraphs: [
+              'الگوهای زیست ایرانی — زندگی جمعی، حریم، و پیوند با طبیعت — در فرم‌های معماری بازتاب دارند. احترام به این الگوها، ساختمان را با ساکنانش هم‌زبان می‌کند.',
+              'هویت محلی نه نشانه‌های تزیینی، بلکه منطق زیستِ فرهنگ است.',
+            ]},
+            { heading: 'مدرن و بومی', paragraphs: [
+              'تضاد مدرنیته و سنت، وقتی با آگاهی حل شود، معماری‌ای پدید می‌آورد که هم امروزی و هم ایرانی است. فناوری در خدمت الگوهای بومی قرار می‌گیرد.',
+              'در نماساز، ما مدرنیته را با متریال و فرم بومی ترجمه می‌کنیم، نه تقلید از غرب.',
+            ]},
+            { heading: 'مسئولیت معمار', paragraphs: [
+              'معمار مسئول است که بنا را ریشه‌دار کند، نه ریشه‌کن. هر پروژه باید به محله و اقلیم خود احترام بگذارد.',
+              'هویت، حاصل پرسشی پیوسته است: این بنا در کجا ایستاده و برای که ساخته شده؟',
+            ]},
+          ] },
       ],
     },
     footer: {
@@ -1091,6 +1406,321 @@ const translations = {
             { heading: 'Creating Harmony', paragraphs: [
               'Harmony is not uniformity but balance among contrasts. Our simple rule: at most three dominant materials per space, with one neutral colour as the ground.',
               'When concrete, wood, and steel meet, each covers another’s weakness and reveals its strength — and that is the very spirit of NAMASAZ architecture.',
+            ]},
+          ] },
+        { id: 6, title: 'Interior Lighting', subtitle: 'نورپردازی در معماری داخلی', category: 'Interior', readTime: '9', date: '2024/07',
+          content: ['Layered lighting turns a space from mere darkness into a display of volume and texture.'],
+          tags: ['Lighting', 'Interior', 'Atmosphere'],
+          body: [
+            { heading: 'Layers of Light', paragraphs: [
+              'A successful space has at least three light layers: ambient for general visibility, task for work, and accent for revealing form. Combined with dimmers, they grant full control of the room’s mood through day and night.',
+              'Graduated (cove) lighting with hidden LED strips reveals architectural edges at night and adds dramatic depth.',
+            ]},
+            { heading: 'Colour Temperature', paragraphs: [
+              'Colour temperature (Kelvin) sets the mood: warm light (2700–3000K) for living and rest, cooler light (4000K+) for kitchen and work.',
+              'Mixing warm and cool light within a space, zoning by function, creates a layered and professional experience.',
+            ]},
+            { heading: 'Shadow & Texture', paragraphs: [
+              'Light is not only illumination but a tool to reveal texture. Raking light across a concrete or wood wall brings grains and imperfections alive.',
+              'At NAMASAZ we use light to emphasise handmade materials — sawn wood and textured concrete — so the honesty of the material is felt.',
+            ]},
+            { heading: 'Energy Efficiency', paragraphs: [
+              'High-efficacy LED lamps and smart presence systems sharply cut consumption. Aligning lighting with daylight reduces the need for artificial light by day to near zero.',
+              'Lighting serves architecture; not decoration, but part of the spatial language unifying volume, material, and feeling.',
+            ]},
+          ] },
+        { id: 7, title: 'Northern Wooden Homes', subtitle: 'معماری خانه‌های چوبی شمال', category: 'Residential', readTime: '11', date: '2024/06',
+          content: ['Wood is the intimate material of the north — a home that speaks with the forest yet lives thoroughly modern.'],
+          tags: ['Wood', 'Residential', 'North'],
+          body: [
+            { heading: 'Why Wood', paragraphs: [
+              'Wood is warm, light, and flexible, behaving resiliently against earthquakes. In northern Iran with the Hyrcanian forests, local wood is both economical and native.',
+              'Wood regulates humidity and, with proper insulation, makes a sustainable home in a humid climate.',
+            ]},
+            { heading: 'Structure & Detail', paragraphs: [
+              'Wood structures range from light framing to Cross-Laminated (CLT) walls. Joinery details — nails, screws, or the most traditional carpentry — determine quality and lifespan.',
+              'At NAMASAZ we prefer visible, handmade joints where the connection itself becomes part of the beauty.',
+            ]},
+            { heading: 'With Glass & Concrete', paragraphs: [
+              'Wood beside full-height glazing dissolves the boundary between interior and forest. Exposed concrete at the base lends permanence to wood’s warmth.',
+              'This material dialogue is the signature of our northern modern villas: nature within, architecture in service of the view.',
+            ]},
+            { heading: 'Care & Longevity', paragraphs: [
+              'Natural oil and protection against insects and moisture multiply wood’s life. Periodic inspection of joints secures structural safety.',
+              'A cared-for wooden home does not wear out but gains deeper colour and character with time.',
+            ]},
+          ] },
+        { id: 8, title: 'Concrete & Wood Dialogue', subtitle: 'بتن و چوب: دیالوگ متریال‌ها', category: 'Material Study', readTime: '10', date: '2024/05',
+          content: ['Concrete and wood sit at opposite poles — cold and warm, rigid and flexible, industrial and natural. Their dialogue makes architecture.'],
+          tags: ['Concrete', 'Wood', 'Combination'],
+          body: [
+            { heading: 'Constructive Contrast', paragraphs: [
+              'Concrete speaks of rigidity and the present age; wood of nature and human warmth. Together each covers the other’s lack: concrete’s cold with wood, wood’s irregularity with concrete’s order.',
+              'This contrast succeeds with a clear logic — for instance concrete on the floor, wood on the ceiling and furniture.',
+            ]},
+            { heading: 'Joint Details', paragraphs: [
+              'The transition between the two materials must be designed with respect: precise seams, metal profiles, and thermal expansion considered.',
+              'In NAMASAZ projects the contact line of concrete and wood is often emphasised with a black steel strip, creating a clean edge and a display device.',
+            ]},
+            { heading: 'Sense & Experience', paragraphs: [
+              'Touching wood and seeing concrete builds a multi-sensory experience. Space grows calm and heavy with concrete, intimate and alive with wood.',
+              'This is the very soul of our Rustic Collection: a space rooted in nature yet expressing the contemporary.',
+            ]},
+            { heading: 'Sustainable Mix', paragraphs: [
+              'Wood with low carbon footprint and concrete with long life are sustainable if the concrete uses optimised cement ratio and the wood comes from certified sources.',
+              'Choosing local materials cuts transport footprint and strengthens the building’s bond with its climate.',
+            ]},
+          ] },
+        { id: 9, title: 'Facade Design', subtitle: 'طراحی نمای ساختمان', category: 'Facade', readTime: '12', date: '2024/04',
+          content: ['The façade is a building’s first story — a skin that expresses identity, climate, and function at once.'],
+          tags: ['Facade', 'Design', 'Climate'],
+          body: [
+            { heading: 'Façade as Skin', paragraphs: [
+              'The façade is not merely a cover but an interactive layer between inside and out. Windows, shades, and openings determine how much light, view, and air enter.',
+              'A good façade answers the climate: large south openings in winter, exterior shades in summer.',
+            ]},
+            { heading: 'Material Choice', paragraphs: [
+              'Concrete, wood, metal, stone, and ceramic each speak differently. Combining them in one façade must follow a unified logic, not accidental accumulation.',
+              'At NAMASAZ, wood–concrete–steel composite façades build the project’s visual identity and converse with the northern environment.',
+            ]},
+            { heading: 'Proportion & Scale', paragraphs: [
+              'Façade division — grid, rhythm of openings, solid–void ratio — determines the building’s weight or lightness. Regular rhythm brings calm; contrast brings emphasis.',
+              'Edge details, form joints, and lighting quality lift the final result from average to professional.',
+            ]},
+            { heading: 'Façade Sustainability', paragraphs: [
+              'Thermal insulation directly affects energy use. Ventilated façades and external insulation systems (ETICS) tame summer heat and winter cold.',
+              'A successful façade stays beautiful, needs little maintenance, and resists northern rain and humidity.',
+            ]},
+          ] },
+        { id: 10, title: 'Brutalism', subtitle: 'معماری بروتالیسم', category: 'Style', readTime: '9', date: '2024/03',
+          content: ['Brutalism is the honesty of concrete — an unadorned architecture that celebrates weight, shadow, and form.'],
+          tags: ['Brutalism', 'Concrete', 'Style'],
+          body: [
+            { heading: 'Philosophy of Raw Concrete', paragraphs: [
+              'Brutalism derives from the French béton brut, raw concrete. A post-war movement that preferred the honesty of structure and material over ornament.',
+              'Brutalist buildings have sculptural mass, deep shadows, and pronounced formwork texture — beauty lodged in candour.',
+            ]},
+            { heading: 'Visual Traits', paragraphs: [
+              'Monumental volumes, exposed stairs, and coarse concrete grids are the marks of the style. The grey of concrete is intentional and patinas with time.',
+              'Brutalism believes a building should stand as a bold, candid mass rather than pretend to be light.',
+            ]},
+            { heading: 'Contemporary Re-reading', paragraphs: [
+              'Today Brutalism steps back from cold purity, warmed by wood and planting. Concrete paired with wood is the signature of many minimal studios.',
+              'At NAMASAZ we borrow Brutalism’s candour alongside rustic warmth to make space both assertive and intimate.',
+            ]},
+            { heading: 'Critique & Legacy', paragraphs: [
+              'Brutalism was criticised for ignoring urban fabric and being hard to maintain; yet its legacy — courage in form and honesty in material — remains inspiring.',
+              'Re-adapting old Brutalist buildings is a way to preserve urban memory while renewing.',
+            ]},
+          ] },
+        { id: 11, title: 'Small Smart Spaces', subtitle: 'طراحی فضاهای کوچک هوشمند', category: 'Residential', readTime: '10', date: '2024/02',
+          content: ['In a small space every centimetre is opportunity; multi-functional design builds quality of life more than square metres.'],
+          tags: ['Small Space', 'Multi-functional', 'Residential'],
+          body: [
+            { heading: 'Multi-functional Layout', paragraphs: [
+              'Foldable furniture, wall wardrobes, and hidden tables turn one space into several rooms. Minimum area with maximum flexibility is the goal.',
+              'Dividing with tall cabinets instead of walls adds visual depth without blocking light.',
+            ]},
+            { heading: 'Light & Colour', paragraphs: [
+              'Light, reflective colours make a space appear larger. Mirrors and glossy surfaces create illusory depth.',
+              'Even lighting and tall windows lighten the ceiling and widen the room.',
+            ]},
+            { heading: 'Smart Storage', paragraphs: [
+              'Storage under stairs, in floors, and at height frees living space. Modular systems allow change with need.',
+              'In small urban apartments, full-height wall closets with wall-coloured doors create invisible order.',
+            ]},
+            { heading: 'Sense, Not Area', paragraphs: [
+              'Small-space quality rises by removing excess and focusing on essentials. A space where every object has a place feels larger.',
+              'Smart small design is the art of compression without pressure — not confinement but liberating discipline.',
+            ]},
+          ] },
+        { id: 12, title: 'Color in Architecture', subtitle: 'رنگ در معماری', category: 'Design', readTime: '8', date: '2024/01',
+          content: ['Colour is the first thing a space shouts or holds in silence — an invisible tool with a profound effect.'],
+          tags: ['Colour', 'Psychology', 'Design'],
+          body: [
+            { heading: 'Psychology of Colour', paragraphs: [
+              'Neutral colours (black, white, grey) build a foundational, lasting feel; warm colours intimacy; cool colours calm and distance.',
+              'In minimal architecture neutrals are the ground, and one accent colour (like NAMASAZ red) brings the space alive.',
+            ]},
+            { heading: 'Colour & Light', paragraphs: [
+              'Colour reads differently under different lights; a grey surface under warm gold versus cool blue light feels distinct.',
+              'Before choosing colour, the designer considers the space’s lighting so the colour stays faithful through the day.',
+            ]},
+            { heading: 'Material Colour', paragraphs: [
+              'Many colours come from the material itself: brown wood, grey concrete, black steel. Respecting a material’s natural colour preserves the space’s honesty.',
+              'Artificial colour should be used sparingly so it does not shadow the material’s texture.',
+            ]},
+            { heading: 'Visual Identity', paragraphs: [
+              'A signature colour (like NAMASAZ red) among neutrals is a visual brand, binding coherence across projects.',
+              'Colour in architecture, like a painter’s signature, is the expression of identity.',
+            ]},
+          ] },
+        { id: 13, title: 'Iranian Courtyard', subtitle: 'حیاط مرکزی ایرانی', category: 'Iranian Architecture', readTime: '11', date: '2023/12',
+          content: ['The central courtyard is the heart of the Iranian home — an introverted space gathering light, water, and shade around itself.'],
+          tags: ['Courtyard', 'Iranian Architecture', 'Tradition'],
+          body: [
+            { heading: 'Logic of Introversion', paragraphs: [
+              'The Iranian house shows a plain wall to the lane and hides all its splendour within — the courtyard. This introversion secured privacy and calm.',
+              'The central courtyard provided natural ventilation and even light, and was the most private space of the home.',
+            ]},
+            { heading: 'Water & Shade', paragraphs: [
+              'The central pool regulated humidity and mirrored the sky. Wooden ivans and columns built a stepped shade that moved with the sun.',
+              'A fruit tree in the corner brought the scent of season and a sense of life.',
+            ]},
+            { heading: 'Contemporary Re-reading', paragraphs: [
+              'The courtyard pattern converses with today’s modern villa: a green central court with a small pool replaces the traditional pond.',
+              'In northern projects a mid green court links rooms with nature.',
+            ]},
+            { heading: 'Memory & Identity', paragraphs: [
+              'The central courtyard is part of our collective memory. Re-reading it is not imitation of form but reviving the logic of introverted life and bond with nature.',
+              'Architecture rooted in this pattern is both Iranian and contemporary.',
+            ]},
+          ] },
+        { id: 14, title: 'Minimal Interior', subtitle: 'معماری داخلی مینیمال', category: 'Interior', readTime: '9', date: '2023/11',
+          content: ['Minimalism is not emptying but reaching the essence — a space where less means more.'],
+          tags: ['Minimal', 'Interior', 'Simplicity'],
+          body: [
+            { heading: 'Less, More', paragraphs: [
+              'Minimalism focuses on the essence by removing excess. Every element must earn its place; the groundless becomes a burden.',
+              'Smooth surfaces, clean lines, and light reflection create deep calm.',
+            ]},
+            { heading: 'Material & Texture', paragraphs: [
+              'In minimalism materials are the main actors. Concrete, wood, and steel with natural texture enrich the space without added ornament.',
+              'Texture contrast — polished concrete against wood’s warmth — replaces busy colours and patterns.',
+            ]},
+            { heading: 'Light & Space', paragraphs: [
+              'Natural light is vital in minimalism; large windows and white walls turn light into a structural element.',
+              'Empty space itself is part of the design — visual silence that soothes the eye.',
+            ]},
+            { heading: 'Discipline & Life', paragraphs: [
+              'Minimalism demands life discipline; its reward is a space that frees the mind. At NAMASAZ our rustic minimalism breaks minimal coldness with a handmade touch.',
+              'Perfection lies not in removal but in right choice.',
+            ]},
+          ] },
+        { id: 15, title: 'Industry & Architecture', subtitle: 'صنعت و معماری', category: 'Industrial', readTime: '10', date: '2023/10',
+          content: ['A factory is architecture too — a structure unifying function, structure, and beauty in service of production.'],
+          tags: ['Industrial', 'Structure', 'Function'],
+          body: [
+            { heading: 'Form Follows Function', paragraphs: [
+              'In industrial architecture form is born from the production process: wide spans, steel sheds, roof lights. Beauty lodges in efficiency.',
+              'The simplicity of industrial structure has inspired many modern styles from Brutalism to Minimalism.',
+            ]},
+            { heading: 'Structure & Material', paragraphs: [
+              'Steel and reinforced concrete are the columns of industrial architecture, enabling large column-free spans.',
+              'In the Wire & Cable factory façade, metal profiles and aluminium sheets created an industrial, contemporary expression.',
+            ]},
+            { heading: 'Industrial Re-adaptation', paragraphs: [
+              'Obsolete factories, keeping their structure and adding a modern layer, become cultural or workshop spaces. This re-adaptation preserves the city’s industrial memory.',
+              'The honesty of industrial structure finds an authentic bond with contemporary design.',
+            ]},
+            { heading: 'Architecture & Production', paragraphs: [
+              'The NAMASAZ workshop itself blends architecture and production — where the drawing on the desk meets the hand on wood and steel.',
+              'The bond between design and making builds a quality possible only in handcraft workshops.',
+            ]},
+          ] },
+        { id: 16, title: 'Renovation', subtitle: 'بازسازی بناهای قدیمی', category: 'Renovation', readTime: '12', date: '2023/09',
+          content: ['Renovation is the architect’s dialogue with yesterday’s building — not demolition but coexistence of time’s layers.'],
+          tags: ['Renovation', 'Restoration', 'Memory'],
+          body: [
+            { heading: 'Respect for Layers', paragraphs: [
+              'An old building tells a story of time. Successful renovation preserves historical layers and places a contemporary layer upon them with respect.',
+              'The contrast of old and new, when designed candidly, yields beauty in the conflict of eras.',
+            ]},
+            { heading: 'Structure & Safety', paragraphs: [
+              'The first step is assessing and reinforcing the foundation and walls. Seismic safety is a precondition of any renovation.',
+              'New technologies — carbon fibre, hidden bracing — secure strength without altering the historic form.',
+            ]},
+            { heading: 'Updating Services', paragraphs: [
+              'Mechanical, insulation, and lighting must meet today’s standards without changing the building’s spirit.',
+              'Floor heating, hidden insulation, and soft lighting bring comfort without altering the old appearance.',
+            ]},
+            { heading: 'Identity & Memory', paragraphs: [
+              'Good renovation keeps urban memory. A revived building continues the neighbourhood’s story rather than erasing it.',
+              'At NAMASAZ we see renovation as a chance to reconcile authenticity with today’s life.',
+            ]},
+          ] },
+        { id: 17, title: 'Solar & Sustainability', subtitle: 'معماری پایدار و انرژی خورشیدی', category: 'Sustainability', readTime: '13', date: '2023/08',
+          content: ['The sun is our ever-present guest; sustainable architecture is a home that gets along with this guest.'],
+          tags: ['Solar', 'Energy', 'Sustainability'],
+          body: [
+            { heading: 'Sun in Service of Building', paragraphs: [
+              'With over 300 sunny days, Iran has exceptional solar potential. Photovoltaic panels on roofs supply much of the energy.',
+              'Solar thermal (water heating) has long existed in vernacular architecture.',
+            ]},
+            { heading: 'Passive Design', paragraphs: [
+              'Before active energy, passive design is key: south orientation, summer shades, and thermal mass (concrete) storing night heat.',
+              'Double-glazed windows and insulation build a smart boundary between inside and climate.',
+            ]},
+            { heading: 'Storage & Recycling', paragraphs: [
+              'Rainwater and greywater recycling cut water use. Floor heat storage tames temperature swings.',
+              'Low-energy local materials minimise the construction carbon footprint.',
+            ]},
+            { heading: 'Energy Future', paragraphs: [
+              'Net-Zero buildings are attainable: on-site generation equals consumption, achieved by combining passive design and solar tech.',
+              'Sustainable architecture is our responsibility toward future generations and this sunlit land.',
+            ]},
+          ] },
+        { id: 18, title: 'Modern Villa Design', subtitle: 'طراحی ویلای مدرن', category: 'Residential', readTime: '11', date: '2023/07',
+          content: ['The modern villa balances privacy and open view — a house that fixes its eye on nature without exposing itself.'],
+          tags: ['Villa', 'Residential', 'Modern'],
+          body: [
+            { heading: 'Bond with Nature', paragraphs: [
+              'The modern villa dissolves the inside–outside boundary with full glazing and open terraces. Pool and greenery are extensions of the room.',
+              'In northern Iran, the villa with forest and sea views is an opportunity for architecture in service of the scene.',
+            ]},
+            { heading: 'Volume & Material', paragraphs: [
+              'Simple concrete volumes combine with wood and glass. Large openings invite light in; shades cut summer heat.',
+              'Handmade materials — sawn wood and textured concrete — give the villa a rustic identity.',
+            ]},
+            { heading: 'Spatial Flow', paragraphs: [
+              'Open-plan between living, kitchen, and terrace eases shared life. Private zones sit on the upper or far end.',
+              'View axis (to pool or garden) guides spatial organisation.',
+            ]},
+            { heading: 'Comfort & Sustainability', paragraphs: [
+              'Insulation, layered lighting, and natural ventilation build uninterrupted comfort.',
+              'The NAMASAZ modern villa blends unpretentious luxury with climatic sustainability.',
+            ]},
+          ] },
+        { id: 19, title: 'Handcrafted Rustic Furniture', subtitle: 'مبلمان رستیک دست‌ساز', category: 'Products', readTime: '9', date: '2023/06',
+          content: ['Every rustic piece tells of tree and hand — furniture that comes alive in the workshop, not the factory.'],
+          tags: ['Furniture', 'Rustic', 'Handmade'],
+          body: [
+            { heading: 'Soul of Handmade', paragraphs: [
+              'Against mass production, handmade furniture is unique. The blade mark on wood, the natural curve of a root, the weight of black steel make each piece one of a kind.',
+              'At NAMASAZ the drawing moves from paper to the joiner’s bench, and there the piece gains character.',
+            ]},
+            { heading: 'Wood & Metal', paragraphs: [
+              'Walnut wood with black steel is the signature of our Rustic Collection. Wood’s warmth and metal’s firmness build a modern–traditional balance.',
+              'Joints are visible: hand screws, fine welds, intentionally unpolished edges.',
+            ]},
+            { heading: 'Sustainability & Longevity', paragraphs: [
+              'Cared-for handmade furniture lasts generations. Natural oil keeps wood alive and cuts production carbon.',
+              'Local wood and natural cuts (roots, knots) minimise waste.',
+            ]},
+            { heading: 'Furniture as Architecture', paragraphs: [
+              'Rustic furniture continues our architectural language — the same material candour and textural intimacy. A piece set in a space converses with wall and floor.',
+              'Every table and chair is architecture in human scale.',
+            ]},
+          ] },
+        { id: 20, title: 'Architecture & Local Identity', subtitle: 'معماری و هویت محلی', category: 'Iranian Architecture', readTime: '12', date: '2023/05',
+          content: ['Identity-less architecture is rootless imitation; authentic architecture grows from the soil and culture of its place.'],
+          tags: ['Identity', 'Vernacular', 'Iranian Architecture'],
+          body: [
+            { heading: 'Rooted in Climate', paragraphs: [
+              'Climate is the architect’s first teacher. Wind-catchers, shabestans, courtyards, and adobe are each a native answer to Iran’s climate.',
+              'Architecture ignoring climate becomes dependent on artificial energy and loses its identity.',
+            ]},
+            { heading: 'Culture & Memory', paragraphs: [
+              'Iranian living patterns — collective life, privacy, bond with nature — reflect in architectural forms. Respecting these makes the building speak with its inhabitants.',
+              'Local identity is not decorative signs but the logic of a culture’s living.',
+            ]},
+            { heading: 'Modern & Native', paragraphs: [
+              'The conflict of modernity and tradition, solved with awareness, yields architecture both contemporary and Iranian. Technology serves native patterns.',
+              'At NAMASAZ we translate modernity with native material and form, not imitation of the West.',
+            ]},
+            { heading: 'Architect’s Responsibility', paragraphs: [
+              'The architect is responsible for rooting the building, not uprooting it. Every project must respect its neighbourhood and climate.',
+              'Identity is a continuous question: where does this building stand, and for whom is it made?',
             ]},
           ] },
       ],
