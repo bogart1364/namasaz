@@ -54,11 +54,11 @@ const translations = {
           description: 'هاستل سفید در دل طبیعت مازندران با ترکیب متریال بومی و مدرن طراحی شده است. نما و سازه با استفاده از چوب، بتن اکسپوز، استیل و سنگ بومی خلق شده که حس گرم و صمیمی را با زبان معماری معاصر بازگو می‌کند. طراحی داخلی با تمرکز بر نور طبیعی و فضاهای باز انجام شده است.',
           specs: [{ label: 'مساحت', value: '۳,۲۰۰ متر مربع' }, { label: 'موقعیت', value: 'مازندران' }, { label: 'متریال', value: 'چوب، بتن، استیل، سنگ' }, { label: 'مدت اجرا', value: '۲۴ ماه' }, { label: 'سال تحویل', value: '۱۴۰۳' }],
           images: [
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
           ],
         },
         {
@@ -67,10 +67,10 @@ const translations = {
           description: 'طراحی و اجرای نمای کارخانه سیم و کابل آمل با ترکیب المان‌های صنعتی و معماری معاصر. استفاده از پروفیل‌های فلزی و ورق‌های آلومینیومی در نمای ساختمان اداری.',
           specs: [{ label: 'مساحت', value: '۵,۵۰۰ متر مربع' }, { label: 'موقعیت', value: 'آمل' }, { label: 'مدت اجرا', value: '۱۸ ماه' }, { label: 'سال تحویل', value: '۱۴۰۲' }],
           images: [
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
           ],
         },
         {
@@ -533,11 +533,11 @@ const translations = {
           description: 'White Hostel is designed in the heart of Mazandaran\'s nature, blending local and modern materials. The facade and structure are crafted from wood, exposed concrete, steel and local stone — expressing a warm, intimate atmosphere through a contemporary architectural language. Interior design focuses on natural light and open spaces.',
           specs: [{ label: 'Area', value: '3,200 sqm' }, { label: 'Location', value: 'Mazandaran' }, { label: 'Materials', value: 'Wood, Concrete, Steel, Stone' }, { label: 'Duration', value: '24 months' }, { label: 'Year', value: '2024' }],
           images: [
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
-            '/assets/renders/project-01.svg',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
+            '/assets/renders/project-01.png',
           ],
         },
         {
@@ -546,10 +546,10 @@ const translations = {
           description: 'Design and construction of the Wire & Cable factory facade combining industrial elements with contemporary architecture. Use of metal profiles and aluminum sheets in the office building facade.',
           specs: [{ label: 'Area', value: '5,500 sqm' }, { label: 'Location', value: 'Amol' }, { label: 'Duration', value: '18 months' }, { label: 'Year', value: '2023' }],
           images: [
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
-            '/assets/renders/project-02.svg',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
+            '/assets/renders/project-02.png',
           ],
         },
         {
