@@ -1,0 +1,19 @@
+/* Custom pencil cursor */
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M3 21l1.5-4.5L17.5 3.5c.8-.8 2-.8 2.8 0l.2.2c.8.8.8 2 0 2.8L7.5 19.5z' fill='none' stroke='%23c8c4bc' stroke-width='1.5'/%3E%3Cpath d='M14.5 6.5l3 3' stroke='%23c8c4bc' stroke-width='1'/%3E%3Cpath d='M3 21l1-3 2 2-3 1z' fill='%23c8c4bc'/%3E%3C/svg%3E") 2 22, auto;
+}
+
+a, button, [role="button"], .cursor-pointer, .group, input, label, select, textarea {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M3 21l1.5-4.5L17.5 3.5c.8-.8 2-.8 2.8 0l.2.2c.8.8.8 2 0 2.8L7.5 19.5z' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cpath d='M14.5 6.5l3 3' stroke='%23ffffff' stroke-width='1'/%3E%3Cpath d='M3 21l1-3 2 2-3 1z' fill='%23ffffff'/%3E%3C/svg%3E") 2 22, pointer;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(200, 196, 188, 0.3);
+  color: white;
+}

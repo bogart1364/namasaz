@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <!-- Concrete texture pattern -->
+    <filter id="concrete">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" seed="2" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="gray"/>
+      <feComponentTransfer in="gray" result="dark">
+        <feFuncR type="linear" slope="0.6" intercept="0.25"/>
+        <feFuncG type="linear" slope="0.6" intercept="0.23"/>
+        <feFuncB type="linear" slope="0.6" intercept="0.22"/>
+      </feComponentTransfer>
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" seed="5" result="grain"/>
+      <feColorMatrix type="saturate" values="0" in="grain" result="grainGray"/>
+      <feBlend in="dark" in2="grainGray" mode="multiply"/>
+    </filter>
+    
+    <!-- Moss texture -->
+    <filter id="moss">
+      <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="4" seed="8" result="mossNoise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.15  0 0 0 0 0.45  0 0 0 0 0.12  0 0 0 0.8 0" in="mossNoise"/>
+    </filter>
+    
+    <!-- Moss edge filter -->
+    <filter id="mossEdge">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="12" result="edge"/>
+      <feDisplacementMap in="SourceGraphic" in2="edge" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <!-- Engraved text effect -->
+    <filter id="engrave">
+      <feOffset dx="1" dy="2" in="SourceAlpha" result="offset"/>
+      <feGaussianBlur in="offset" stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#000" flood-opacity="0.4" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feOffset dx="-0.5" dy="-0.5" in="SourceAlpha" result="offset2"/>
+      <feGaussianBlur in="offset2" stdDeviation="0.5" result="blur2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.15" result="color2"/>
+      <feComposite in="color2" in2="blur2" operator="in" result="highlight"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="highlight"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Gradient for moss -->
+    <linearGradient id="mossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a1e;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#3a7a28;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#1e4a12;stop-opacity:0.95"/>
+    </linearGradient>
+    
+    <!-- Concrete gradient -->
+    <radialGradient id="concreteGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" style="stop-color:#8a8580"/>
+      <stop offset="100%" style="stop-color:#5a5550"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Concrete background -->
+  <rect width="1200" height="600" fill="url(#concreteGrad)"/>
+  <rect width="1200" height="600" filter="url(#concrete)" opacity="0.7"/>
+  
+  <!-- Concrete cracks/texture lines -->
+  <g stroke="#4a4540" stroke-width="0.5" opacity="0.3">
+    <path d="M100,50 L120,80 L115,120 L130,180"/>
+    <path d="M400,20 L380,60 L390,100 L375,150 L385,200"/>
+    <path d="M800,30 L820,70 L810,110 L825,160"/>
+    <path d="M200,400 L220,440 L210,480 L225,520"/>
+    <path d="M600,350 L580,390 L590,430 L575,470"/>
+    <path d="M1000,380 L1020,420 L1010,460 L1025,500"/>
+  </g>
+  
+  <!-- Moss patches - scattered naturally -->
+  <g filter="url(#mossEdge)">
+    <!-- Top left moss -->
+    <ellipse cx="150" cy="80" rx="80" ry="40" fill="url(#mossGrad)" opacity="0.85"/>
+    <ellipse cx="120" cy="100" rx="50" ry="25" fill="#3a7a28" opacity="0.7"/>
+    <ellipse cx="180" cy="70" rx="30" ry="15" fill="#2d5a1e" opacity="0.8"/>
+    
+    <!-- Top right moss -->
+    <ellipse cx="950" cy="60" rx="90" ry="45" fill="url(#mossGrad)" opacity="0.8"/>
+    <ellipse cx="980" cy="80" rx="60" ry="30" fill="#3a7a28" opacity="0.75"/>
+    <ellipse cx="920" cy="50" rx="40" ry="20" fill="#2d5a1e" opacity="0.85"/>
+    
+    <!-- Bottom left moss -->
+    <ellipse cx="100" cy="520" rx="100" ry="50" fill="url(#mossGrad)" opacity="0.9"/>
+    <ellipse cx="80" cy="540" rx="70" ry="35" fill="#3a7a28" opacity="0.8"/>
+    <ellipse cx="140" cy="510" rx="45" ry="22" fill="#2d5a1e" opacity="0.85"/>
+    
+    <!-- Bottom right moss -->
+    <ellipse cx="1050" cy="530" rx="110" ry="55" fill="url(#mossGrad)" opacity="0.85"/>
+    <ellipse cx="1080" cy="550" rx="75" ry="38" fill="#3a7a28" opacity="0.8"/>
+    <ellipse cx="1020" cy="520" rx="50" ry="25" fill="#2d5a1e" opacity="0.9"/>
+    
+    <!-- Center scattered moss -->
+    <ellipse cx="300" cy="300" rx="35" ry="18" fill="#3a7a28" opacity="0.6"/>
+    <ellipse cx="700" cy="280" rx="40" ry="20" fill="#2d5a1e" opacity="0.55"/>
+    <ellipse cx="500" cy="450" rx="30" ry="15" fill="#3a7a28" opacity="0.5"/>
+    
+    <!-- Edge moss creeping -->
+    <ellipse cx="0" cy="300" rx="60" ry="100" fill="url(#mossGrad)" opacity="0.7"/>
+    <ellipse cx="1200" cy="250" rx="50" ry="90" fill="url(#mossGrad)" opacity="0.65"/>
+    <ellipse cx="600" cy="0" rx="120" ry="40" fill="url(#mossGrad)" opacity="0.6"/>
+    <ellipse cx="500" cy="600" rx="100" ry="35" fill="url(#mossGrad)" opacity="0.65"/>
+  </g>
+  
+  <!-- Small moss dots for texture -->
+  <g fill="#3a7a28" opacity="0.4">
+    <circle cx="250" cy="150" r="3"/>
+    <circle cx="350" cy="200" r="2"/>
+    <circle cx="450" cy="120" r="4"/>
+    <circle cx="550" cy="180" r="2.5"/>
+    <circle cx="650" cy="140" r="3"/>
+    <circle cx="750" cy="200" r="2"/>
+    <circle cx="850" cy="160" r="3.5"/>
+    <circle cx="200" cy="350" r="2.5"/>
+    <circle cx="400" cy="380" r="3"/>
+    <circle cx="600" cy="320" r="2"/>
+    <circle cx="800" cy="360" r="3.5"/>
+    <circle cx="1000" cy="340" r="2.5"/>
+    <circle cx="300" cy="480" r="3"/>
+    <circle cx="500" cy="500" r="2"/>
+    <circle cx="700" cy="460" r="3.5"/>
+    <circle cx="900" cy="490" r="2.5"/>
+  </g>
+  
+  <!-- NAMASAZ engraved text -->
+  <g filter="url(#engrave)">
+    <text x="600" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="bold" letter-spacing="25" fill="#6a6560" opacity="0.85">NAMASAZ</text>
+  </g>
+  
+  <!-- Subtle depth shadow on text -->
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="bold" letter-spacing="25" fill="none" stroke="#3a3530" stroke-width="0.5" opacity="0.3">NAMASAZ</text>
+  
+  <!-- Vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" style="stop-color:transparent"/>
+    <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:0.5"/>
+  </radialGradient>
+  <rect width="1200" height="600" fill="url(#vignette)"/>
+</svg>

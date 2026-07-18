@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background -->
+  <rect width="64" height="64" rx="4" fill="#0a0a0a"/>
+  
+  <!-- Roof 1 - Red -->
+  <path d="M12 42 L22 28 L32 42" stroke="#c0392b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Roof 2 - Dark -->
+  <path d="M22 42 L32 28 L42 42" stroke="#2c3e50" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Roof 3 - Gray -->
+  <path d="M32 42 L42 28 L52 42" stroke="#7f8c8d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Window - Red -->
+  <rect x="25" y="33" width="4" height="4" fill="#c0392b" rx="0.5"/>
+  <rect x="30" y="33" width="4" height="4" fill="#c0392b" rx="0.5"/>
+  <rect x="25" y="38" width="4" height="4" fill="#c0392b" rx="0.5"/>
+  <rect x="30" y="38" width="4" height="4" fill="#c0392b" rx="0.5"/>
+  
+  <!-- Text NAMASAZ -->
+  <text x="32" y="54" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="7" font-weight="900" fill="#2c3e50" letter-spacing="0.5">NAMASAZ</text>
+  
+  <!-- Persian text -->
+  <text x="32" y="61" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="4" fill="#c0392b">طراحی و معماری نما ساز</text>
+</svg>
