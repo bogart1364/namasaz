@@ -1,20 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
-<defs>
-  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#121110"/><stop offset="1" stop-color="#0a0a0a"/>
-  </linearGradient>
-  <radialGradient id="vig" cx="50%" cy="42%" r="75%">
-    <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-    <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
-  </radialGradient>
-  <linearGradient id="conc" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#8a857c"/><stop offset="1" stop-color="#4a4641"/>
-  </linearGradient>
-  <linearGradient id="wd" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#9c7b54"/><stop offset="1" stop-color="#5e4a32"/>
-  </linearGradient>
-</defs>
-<rect width="1200" height="800" fill="url(#sky)"/>
-<line x1='0' y1='0' x2='0' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='60' y1='0' x2='60' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='120' y1='0' x2='120' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='180' y1='0' x2='180' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='240' y1='0' x2='240' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='300' y1='0' x2='300' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='360' y1='0' x2='360' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='420' y1='0' x2='420' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='480' y1='0' x2='480' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='540' y1='0' x2='540' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='600' y1='0' x2='600' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='660' y1='0' x2='660' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='720' y1='0' x2='720' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='780' y1='0' x2='780' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='840' y1='0' x2='840' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='900' y1='0' x2='900' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='960' y1='0' x2='960' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='1020' y1='0' x2='1020' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='1080' y1='0' x2='1080' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='1140' y1='0' x2='1140' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='1200' y1='0' x2='1200' y2='800' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='0' x2='1200' y2='0' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='60' x2='1200' y2='60' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='120' x2='1200' y2='120' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='180' x2='1200' y2='180' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='240' x2='1200' y2='240' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='300' x2='1200' y2='300' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='360' x2='1200' y2='360' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='420' x2='1200' y2='420' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='480' x2='1200' y2='480' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='540' x2='1200' y2='540' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='600' x2='1200' y2='600' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='660' x2='1200' y2='660' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='720' x2='1200' y2='720' stroke='#26241f' stroke-opacity='+' stroke-width='1'/><line x1='0' y1='780' x2='1200' y2='780' stroke='#26241f' stroke-opacity='+' stroke-width='1'/>
-<rect width="1200" height="800" fill="url(#vig)"/>
-</svg>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e0d0c"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#bg)"/><line x1='0' y1='640' x2='1200' y2='640' stroke='#3a3733' stroke-width='1'/>
+<circle cx='980' cy='200' r='46' fill='none' stroke='#b8b4ac' stroke-opacity='0.18' stroke-width='1.5'/>
+<rect x='0' y='636' width='1200' height='3' fill='#c0392b' opacity='0.35'/><g stroke='#6b665e' stroke-width='2' fill='none'>
+<rect x='90' y='420' width='150' height='170'/>
+<path d='M90 420 L 165 365 L 240 420 Z'/>
+<rect x='145' y='500' width='40' height='90'/>
+<rect x='310' y='420' width='150' height='170'/>
+<path d='M310 420 L 385 365 L 460 420 Z'/>
+<rect x='365' y='500' width='40' height='90'/>
+<rect x='530' y='420' width='150' height='170'/>
+<path d='M530 420 L 605 365 L 680 420 Z'/>
+<rect x='585' y='500' width='40' height='90'/>
+<rect x='750' y='420' width='150' height='170'/>
+<path d='M750 420 L 825 365 L 900 420 Z'/>
+<rect x='805' y='500' width='40' height='90'/>
+<rect x='970' y='420' width='150' height='170'/>
+<path d='M970 420 L 1045 365 L 1120 420 Z'/>
+<rect x='1025' y='500' width='40' height='90'/>
+</g>
+<g stroke='#9c7b54' stroke-width='2' opacity='0.75' fill='none'>
+<line x1='90' y1='455' x2='240' y2='455'/>
+<line x1='310' y1='455' x2='460' y2='455'/>
+<line x1='530' y1='455' x2='680' y2='455'/>
+<line x1='750' y1='455' x2='900' y2='455'/>
+<line x1='970' y1='455' x2='1120' y2='455'/>
+</g>
+<polyline points='60,600 300,565 600,600 900,565 1140,600' fill='none' stroke='#3a3733' stroke-width='1.5'/>
+<rect width="1200" height="800" fill="url(#vig)"/></svg>
