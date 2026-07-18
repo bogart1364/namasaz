@@ -21,6 +21,7 @@ export default function Articles() {
   const { t, align, alignEnd } = useLang();
   const [sel, setSel] = useState<Article | null>(null);
   const [allOpen, setAllOpen] = useState(false);
+  const [fromAll, setFromAll] = useState(false);
 
   const articleImages = [
     '/assets/renders/article-01.svg',
@@ -111,7 +112,11 @@ export default function Articles() {
           </div>
         </div>
       </section>
-      <ArticleDetail article={sel} onClose={() => setSel(null)} onBackToAll={() => { setSel(null); setAllOpen(true); }} />
+      <ArticleDetail
+        article={sel}
+        onClose={() => { setSel(null); setFromAll(false); }}
+        onBackToAll={fromAll ? () => { setSel(null); setFromAll(false); setAllOpen(true); } : undefined}
+      />
 
       <AnimatePresence>
         {allOpen && (
@@ -126,7 +131,7 @@ export default function Articles() {
               <h2 className="text-3xl md:text-5xl font-extralight text-white tracking-tight mb-12">{t.articles.title}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {articles.map((a) => (
-                  <motion.article key={a.id} whileHover={{ y: -4 }} onClick={() => { setAllOpen(false); setSel(a); }} className="group cursor-pointer border border-neutral-800/30 hover:border-neutral-700/50 transition-colors duration-500">
+                  <motion.article key={a.id} whileHover={{ y: -4 }} onClick={() => { setAllOpen(false); setFromAll(true); setSel(a); }} className="group cursor-pointer border border-neutral-800/30 hover:border-neutral-700/50 transition-colors duration-500">
                     <div className="aspect-[4/3] w-full relative overflow-hidden bg-neutral-900">
                       <img src={a.image} alt={a.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                       <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />

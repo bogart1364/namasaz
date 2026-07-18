@@ -37,18 +37,16 @@ export default function ArticleDetail({ article, onClose, onBackToAll }: Article
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[100] bg-[#0a0a0a] overflow-y-auto" style={{ scrollbarWidth: 'none' }}>
       <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 
-      <button onClick={() => (onBackToAll ? onBackToAll() : onClose())} className="fixed top-6 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer">
-        {onBackToAll ? (
-          <svg className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white transition-colors rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
-        ) : (
-          <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="4" y1="4" x2="20" y2="20" /><line x1="20" y1="4" x2="4" y2="20" /></svg>
-        )}
+      <button onClick={onClose} className="fixed top-6 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer">
+        <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="4" y1="4" x2="20" y2="20" /><line x1="20" y1="4" x2="4" y2="20" /></svg>
       </button>
 
-      <button onClick={() => (onBackToAll ? onBackToAll() : onClose())} className="fixed top-6 right-6 z-[110] h-11 px-4 flex items-center gap-2 border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer">
-        <svg className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white transition-colors rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
-        <span className="text-[11px] tracking-[0.15em] text-neutral-400 font-mono group-hover:text-white transition-colors">{t.articles.allArticles}</span>
-      </button>
+      {onBackToAll && (
+        <button onClick={onBackToAll} className="fixed top-6 right-6 z-[110] h-11 px-4 flex items-center gap-2 border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer">
+          <svg className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white transition-colors rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
+          <span className="text-[11px] tracking-[0.15em] text-neutral-400 font-mono group-hover:text-white transition-colors">{t.articles.allArticles}</span>
+        </button>
+      )}
 
       <div className="w-full h-[50vh] md:h-[60vh] relative">
         <img src={article.image} alt={article.title} className="w-full h-full object-cover" loading="eager" />
