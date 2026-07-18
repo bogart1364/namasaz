@@ -126,7 +126,7 @@ export default function Articles() {
               {t.articles.allArticles}
               <svg className="w-3.5 h-3.5 rtl:group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform rtl:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 5 12 12 19" /></svg>
             </button>
-            <div className="max-w-6xl mx-auto px-6 md:px-12 pt-32 pb-24">
+            <div className="max-w-6xl mx-auto px-6 md:px-12 pt-44 pb-24">
               <span className="text-[10px] tracking-[0.25em] text-neutral-500 block mb-4 font-mono uppercase">{t.articles.label}</span>
               <h2 className="text-3xl md:text-5xl font-extralight text-white tracking-tight mb-12">{t.articles.title}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
