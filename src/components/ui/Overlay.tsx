@@ -1,18 +1,38 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 
 export default function Overlay() {
   const { t, align } = useLang();
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end end'],
-  });
+  // Drive progress from the actual scroll container (same source as the 3D camera),
+  // so it works reliably inside the fixed #scroll-container on mobile.
+  const progress = useMotionValue(0);
 
-  const opacity0 = useTransform(scrollYProgress, [0, 0.15, 0.3], [1, 1, 0]);
-  const opacity1 = useTransform(scrollYProgress, [0.25, 0.45, 0.65], [0, 1, 0]);
-  const opacity2 = useTransform(scrollYProgress, [0.55, 0.75, 1], [0, 1, 1]);
+  useEffect(() => {
+    const el = document.getElementById('scroll-container');
+    if (!el) return;
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const sectionEnd = window.innerHeight * 3;
+      const p = Math.max(0, Math.min(1, el.scrollTop / sectionEnd));
+      progress.set(p);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    el.addEventListener('scroll', onScroll, { passive: true });
+    update();
+    return () => {
+      el.removeEventListener('scroll', onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [progress]);
+
+  const opacity0 = useTransform(progress, [0, 0.15, 0.3], [1, 1, 0]);
+  const opacity1 = useTransform(progress, [0.25, 0.45, 0.65], [0, 1, 0]);
+  const opacity2 = useTransform(progress, [0.55, 0.75, 1], [0, 1, 1]);
 
   const opacities = [opacity0, opacity1, opacity2];
 
