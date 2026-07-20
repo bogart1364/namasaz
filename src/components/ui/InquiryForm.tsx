@@ -59,7 +59,7 @@ export default function InquiryForm({ open, onClose, productName }: InquiryFormP
       (lang === 'fa' ? 'محصول مورد نظر: ' : 'Product: ') + want + '\n\n' +
       (lang === 'fa' ? 'توضیحات: ' : 'Description: ') + '\n' + desc
     );
-    window.location.href = `mailto:ali.peirovii@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@namasaz.co?subject=${subject}&body=${body}`;
     setSent(true);
   };
 

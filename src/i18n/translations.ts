@@ -496,7 +496,7 @@ const translations = {
       address: 'آدرس',
       addressValue: 'مازندران، آمل، خیابان مدرس، رسالت ۸',
       phones: ['۰۹۳۵۳۵۰۰۳۶۳', '۰۹۱۲۸۴۴۲۲۷۸'],
-      emailValue: 'ali.peirovii@gmail.com',
+      emailValue: 'info@namasaz.co',
     },
     articles: {
       label: 'ژورنال',
@@ -1471,7 +1471,7 @@ const translations = {
       address: 'Address',
       addressValue: 'Amol, Mazandaran — Modares St, Resalat 8',
       phones: ['+98 935 350 0363', '+98 912 844 2278'],
-      emailValue: 'ali.peirovii@gmail.com',
+      emailValue: 'info@namasaz.co',
     },
     articles: {
       label: 'JOURNAL',
