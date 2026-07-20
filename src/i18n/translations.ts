@@ -89,8 +89,8 @@ const translations = {
           description: 'طراحی داخلی نمایشگاه و دفتر مبلمان اداری امین با تمرکز بر نمایش محصولات در فضایی مدرن و حرفه‌ای. استفاده از نورپردازی حرفه‌ای و چیدمان مناسب.',
           specs: [{ label: 'مساحت', value: '۸۵۰ متر مربع' }, { label: 'موقعیت', value: 'تهران' }, { label: 'مدت اجرا', value: '۸ ماه' }, { label: 'سال تحویل', value: '۱۴۰۲' }],
           images: [
-            '/assets/renders/project-04%20amin%20furture/01.png',
             '/assets/renders/project-04%20amin%20furture/02.png',
+            '/assets/renders/project-04%20amin%20furture/01.png',
             '/assets/renders/project-04%20amin%20furture/03.png',
             '/assets/renders/project-04%20amin%20furture/04.png',
           ],
@@ -1064,8 +1064,8 @@ const translations = {
           description: 'Interior design of Amin Office Furniture showroom and office, focusing on product display in a modern and professional space. Use of professional lighting and appropriate arrangement.',
           specs: [{ label: 'Area', value: '850 sqm' }, { label: 'Location', value: 'Tehran' }, { label: 'Duration', value: '8 months' }, { label: 'Year', value: '2023' }],
           images: [
-            '/assets/renders/project-04%20amin%20furture/01.png',
             '/assets/renders/project-04%20amin%20furture/02.png',
+            '/assets/renders/project-04%20amin%20furture/01.png',
             '/assets/renders/project-04%20amin%20furture/03.png',
             '/assets/renders/project-04%20amin%20furture/04.png',
           ],
