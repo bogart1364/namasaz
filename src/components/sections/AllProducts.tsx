@@ -51,6 +51,7 @@ export default function AllProducts({ onClose, initialProductId }: AllProductsPr
       {/* Close button */}
       <button
         onClick={onClose}
+        aria-label="Close"
         className="fixed top-20 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer"
       >
         <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">

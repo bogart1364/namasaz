@@ -88,7 +88,7 @@ export default function InquiryForm({ open, onClose, productName }: InquiryFormP
                 <h2 className="text-lg font-normal text-white tracking-tight">{labels.title}</h2>
                 <p className="text-[11px] text-neutral-500 font-light mt-1">{labels.subtitle}</p>
               </div>
-              <button onClick={onClose} className="w-9 h-9 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all cursor-pointer">
+              <button onClick={onClose} aria-label="Close" className="w-9 h-9 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all cursor-pointer">
                 <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <line x1="4" y1="4" x2="20" y2="20" />
                   <line x1="20" y1="4" x2="4" y2="20" />

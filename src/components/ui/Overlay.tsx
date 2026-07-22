@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 
 export default function Overlay() {
-  const { t, align } = useLang();
+  const { t, lang, align } = useLang();
   const containerRef = useRef<HTMLDivElement>(null);
   // Drive progress from the actual scroll container (same source as the 3D camera),
   // so it works reliably inside the fixed #scroll-container on mobile.
@@ -48,7 +48,7 @@ export default function Overlay() {
             className={`max-w-xl px-6 md:px-16 ${align} select-none`}
           >
             <span className="text-[10px] tracking-[0.25em] text-neutral-500 block mb-5 font-mono">
-              ۰{index + 1} / {align === 'text-right' ? 'مفهوم' : 'CONCEPT'}
+              {lang === 'fa' ? '۰' : '0'}{index + 1} / {lang === 'fa' ? 'مفهوم' : 'CONCEPT'}
             </span>
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-white tracking-tight mb-5">
               {page.title}

@@ -52,6 +52,12 @@ export default function ProductCard({ product, onOpenInGallery, autoOpen }: Prod
     }
   }, [autoOpen]);
 
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => { if (e.key === 'Escape' && galleryOpen) setGalleryOpen(false); };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [galleryOpen]);
+
   const name = lang === 'fa' ? product.name : product.nameEn;
   const altName = lang === 'fa' ? product.nameEn : product.name;
   const category = lang === 'fa' ? product.category : product.categoryEn;

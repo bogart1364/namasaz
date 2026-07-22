@@ -63,7 +63,7 @@ export default function Projects() {
                     </div>
                     <div className={`flex items-center gap-2 text-xs text-neutral-400 group-hover:text-white transition-colors ${alignEnd}`}>
                       <span>{t.projects.view}</span>
-                      <svg className="w-3 h-3 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg className="w-3 h-3 rtl:rotate-180 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 19 19 12 12 5" />
                       </svg>

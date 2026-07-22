@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 
 export default function Footer() {
   const { t } = useLang();
+  const [email, setEmail] = useState('');
 
   return (
     <footer id="footer" className="relative w-full bg-[#050505] z-20">
@@ -27,8 +29,8 @@ export default function Footer() {
               <h4 className="text-sm text-white mb-1.5 font-light">{t.footer.newsletter}</h4>
               <p className="text-xs text-neutral-500 mb-4 leading-[1.8] font-light">{t.footer.newsletterDesc}</p>
               <div className="flex flex-col gap-2 max-w-sm mx-auto lg:mx-0">
-                <input type="email" placeholder={t.footer.emailPlaceholder} className="w-full bg-transparent border border-neutral-800 px-4 py-3 text-sm text-white placeholder:text-neutral-600 focus:outline-none focus:border-neutral-500 transition-colors text-center lg:text-left" />
-                <button className="w-full py-3 bg-white text-black text-sm font-medium hover:bg-neutral-200 transition-colors">{t.footer.subscribe}</button>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t.footer.emailPlaceholder} className="w-full bg-transparent border border-neutral-800 px-4 py-3 text-sm text-white placeholder:text-neutral-600 focus:outline-none focus:border-neutral-500 transition-colors text-center lg:text-left" />
+                <button onClick={() => { if (email) { window.location.href = `mailto:info@namasaz.co?subject=Newsletter%20Subscription&body=Email:%20${encodeURIComponent(email)}`; setEmail(''); } }} className="w-full py-3 border border-neutral-600 hover:border-[#c0392b] text-white text-sm font-light hover:bg-[#c0392b]/10 transition-colors cursor-pointer">{t.footer.subscribe}</button>
               </div>
             </motion.div>
           </div>
@@ -57,7 +59,7 @@ export default function Footer() {
             <h4 className="text-[10px] tracking-[0.25em] text-neutral-500 uppercase mb-4 font-mono">{t.footer.studio}</h4>
             <ul className="space-y-2">
               {t.footer.studioLinks.map((l, i) => (
-                <li key={i}><a href="#" className={`group flex items-center justify-between text-sm text-neutral-500 hover:text-white transition-colors font-light`}>
+                <li key={i}><a href="#" onClick={(e) => e.preventDefault()} className={`group flex items-center justify-between text-sm text-neutral-500 hover:text-white transition-colors font-light`}>
                   <span>{l.label}</span>
                   <span className="text-[9px] text-neutral-700 group-hover:text-neutral-400 transition-colors font-mono">{l.en}</span>
                 </a></li>

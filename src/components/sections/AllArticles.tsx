@@ -9,7 +9,7 @@ interface AllArticlesProps {
 }
 
 export default function AllArticles({ onClose }: AllArticlesProps) {
-  const { t, align, alignEnd } = useLang();
+  const { t, lang, align, alignEnd } = useLang();
   const [sel, setSel] = useState<{
     id: number; title: string; subtitle: string; category: string; readTime: string; date: string; image: string; content: string[]; tags: string[]; body?: { heading: string; paragraphs: string[] }[];
   } | null>(null);
@@ -61,6 +61,7 @@ export default function AllArticles({ onClose }: AllArticlesProps) {
       {/* Close button */}
       <button
         onClick={onClose}
+        aria-label="Close"
         className="fixed top-20 left-6 z-[110] w-11 h-11 flex items-center justify-center border border-neutral-700 hover:border-white bg-black/50 backdrop-blur-sm transition-all group cursor-pointer"
       >
         <svg className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -78,7 +79,7 @@ export default function AllArticles({ onClose }: AllArticlesProps) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-white tracking-tight mb-4">
             {t.articles.title}
           </h1>
-          <p className="text-sm text-neutral-500 font-light max-w-md">{t.articles.viewAll}</p>
+          <p className="text-sm text-neutral-500 font-light max-w-md">{lang === 'fa' ? 'مجموعه مقالات تخصصی معماری نماساز' : 'A collection of NAMASAZ architecture articles'}</p>
         </motion.div>
       </div>
 
@@ -118,7 +119,7 @@ export default function AllArticles({ onClose }: AllArticlesProps) {
         </div>
       </div>
 
-      <ArticleDetail article={sel} onClose={() => setSel(null)} />
+      <ArticleDetail article={sel} onClose={() => setSel(null)} onBackToAll={() => setSel(null)} />
     </motion.div>
   );
 }
