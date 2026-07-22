@@ -245,11 +245,9 @@ export default function ProductCard({ product, onOpenInGallery, autoOpen }: Prod
                     animate={{ x: 0 }}
                     exit={{ x: '100%' }}
                     transition={{ type: 'tween', duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                    className="absolute top-0 right-0 bottom-0 z-[230] w-full max-w-md bg-[#111] border-l border-neutral-800/40 overflow-y-auto flex flex-col"
+                    className="absolute top-0 right-0 bottom-0 z-[230] w-full max-w-md bg-[#111] border-l border-neutral-800/40 overflow-y-auto flex flex-col hide-scrollbar"
                     onClick={(e) => e.stopPropagation()}
-                    style={{ scrollbarWidth: 'none' }}
                   >
-                    <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 
                     {/* Close bar */}
                     <div className="flex items-center justify-end px-10 pt-8 pb-4">

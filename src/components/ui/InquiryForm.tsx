@@ -80,9 +80,7 @@ export default function InquiryForm({ open, onClose, productName }: InquiryFormP
             transition={{ duration: 0.3, ease: 'easeOut' }}
             className="w-full max-w-md bg-[#111] border border-neutral-800/60"
             onClick={(e) => e.stopPropagation()}
-            style={{ scrollbarWidth: 'none' }}
           >
-            <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 
             {/* Header */}
             <div className="flex items-center justify-between px-8 py-6 border-b border-neutral-800/50">

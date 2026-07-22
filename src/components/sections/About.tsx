@@ -1,5 +1,5 @@
 import { motion, useScroll } from 'framer-motion';
-import { useRef, Suspense } from 'react';
+import { useRef, Suspense, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useLang } from '../../i18n/LanguageContext';
@@ -9,6 +9,19 @@ function FloatingVolume() {
   const slab1 = useRef<THREE.Mesh>(null);
   const slab2 = useRef<THREE.Mesh>(null);
   const slab3 = useRef<THREE.Mesh>(null);
+
+  const boxEdges = useMemo(() => new THREE.EdgesGeometry(new THREE.BoxGeometry(2.5, 4, 3)), []);
+
+  const lineGeo = useMemo(() => {
+    const geo = new THREE.BufferGeometry();
+    const vertices = new Float32Array([
+      -2, 0, 1, -2, 3.5, 1,
+      2, 0, -1, 2, 3, -1,
+      -1, 0, 2, 1.5, 2.5, -1.5,
+    ]);
+    geo.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    return geo;
+  }, []);
 
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
@@ -33,13 +46,10 @@ function FloatingVolume() {
       <mesh ref={slab1} position={[0, 1.2, 0]}><boxGeometry args={[0.2, 3, 2.5]} /><meshStandardMaterial color="#b8b4ac" roughness={0.88} metalness={0.04} /></mesh>
       <mesh ref={slab2} position={[0.8, 0.4, 0.3]}><boxGeometry args={[2.5, 0.15, 2]} /><meshStandardMaterial color="#c2bdb5" roughness={0.9} metalness={0.03} /></mesh>
       <mesh ref={slab3} position={[-0.5, 2.2, -0.2]}><boxGeometry args={[2, 0.12, 1.8]} /><meshStandardMaterial color="#a8a39b" roughness={0.88} metalness={0.04} /></mesh>
-      <lineSegments position={[0, 1.2, 0]}><edgesGeometry args={[new THREE.BoxGeometry(2.5, 4, 3)]} /><lineBasicMaterial color="#2a2825" /></lineSegments>
+      <lineSegments position={[0, 1.2, 0]} geometry={boxEdges}><lineBasicMaterial color="#2a2825" transparent opacity={0.6} /></lineSegments>
       <mesh position={[1.2, 2.8, 0.5]} rotation={[0.3, 0.5, 0.2]}><tetrahedronGeometry args={[0.2, 0]} /><meshStandardMaterial color="#c0392b" roughness={0.7} metalness={0.1} /></mesh>
-      <lineSegments>
-        <bufferGeometry>
-          <bufferAttribute attach="attributes-position" args={[new Float32Array([-2,0,1,-2,3.5,1,2,0,-1,2,3,-1,-1,0,2,1.5,2.5,-1.5]), 3]} count={6} itemSize={3} />
-        </bufferGeometry>
-        <lineBasicMaterial color="#1f1e1c" />
+      <lineSegments geometry={lineGeo}>
+        <lineBasicMaterial color="#1f1e1c" transparent opacity={0.5} />
       </lineSegments>
     </group>
   );

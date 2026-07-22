@@ -2,60 +2,6 @@ import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-function WireframeBox({
-  position,
-  args,
-  color = '#444',
-}: {
-  position: [number, number, number];
-  args: [number, number, number];
-  color?: string;
-}) {
-  const ref = useRef<THREE.LineSegments>(null);
-  const initialY = position[1];
-
-  const geometry = useMemo(() => {
-    const geo = new THREE.BoxGeometry(args[0], args[1], args[2]);
-    const edges = new THREE.EdgesGeometry(geo);
-    return edges;
-  }, [args]);
-
-  useFrame((state) => {
-    if (ref.current) {
-      ref.current.position.y = initialY + Math.sin(state.clock.getElapsedTime() * 0.2 + position[0]) * 0.08;
-    }
-  });
-
-  return (
-    <lineSegments ref={ref} position={position} geometry={geometry}>
-      <lineBasicMaterial color={color} linewidth={1} />
-    </lineSegments>
-  );
-}
-
-function ConstructionLine({
-  start,
-  end,
-  color = '#333',
-}: {
-  start: [number, number, number];
-  end: [number, number, number];
-  color?: string;
-}) {
-  const geometry = useMemo(() => {
-    const geo = new THREE.BufferGeometry();
-    const vertices = new Float32Array([...start, ...end]);
-    geo.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
-    return geo;
-  }, [start, end]);
-
-  return (
-    <lineSegments geometry={geometry}>
-      <lineBasicMaterial color={color} linewidth={1} />
-    </lineSegments>
-  );
-}
-
 function ThinSlab({
   position,
   rotation,
@@ -69,10 +15,11 @@ function ThinSlab({
 }) {
   const ref = useRef<THREE.Mesh>(null);
   const initialY = position[1];
+  const phase = useMemo(() => position[0] * 0.5 + position[2] * 0.3, [position]);
 
   useFrame((state) => {
     if (ref.current) {
-      ref.current.position.y = initialY + Math.sin(state.clock.getElapsedTime() * 0.15 + position[0] * 0.5) * 0.05;
+      ref.current.position.y = initialY + Math.sin(state.clock.getElapsedTime() * 0.15 + phase) * 0.05;
     }
   });
 
@@ -82,6 +29,57 @@ function ThinSlab({
       <meshStandardMaterial color={color} roughness={0.88} metalness={0.04} />
     </mesh>
   );
+}
+
+function WireframeBox({
+  position,
+  args,
+  color = '#444',
+}: {
+  position: [number, number, number];
+  args: [number, number, number];
+  color?: string;
+}) {
+  const ref = useRef<THREE.LineSegments>(null);
+  const initialY = position[1];
+  const phase = useMemo(() => position[0] * 0.3 + position[2] * 0.2, [position]);
+
+  const geometry = useMemo(() => {
+    const geo = new THREE.BoxGeometry(args[0], args[1], args[2]);
+    return new THREE.EdgesGeometry(geo);
+  }, [args]);
+
+  useFrame((state) => {
+    if (ref.current) {
+      ref.current.position.y = initialY + Math.sin(state.clock.getElapsedTime() * 0.2 + phase) * 0.08;
+    }
+  });
+
+  return (
+    <lineSegments ref={ref} position={position} geometry={geometry}>
+      <lineBasicMaterial color={color} linewidth={1} transparent opacity={0.6} />
+    </lineSegments>
+  );
+}
+
+function ConstructionLine({
+  start,
+  end,
+  color = '#333',
+}: {
+  start: [number, number, number];
+  end: [number, number, number];
+  color?: string;
+}) {
+  const line = useMemo(() => {
+    const geo = new THREE.BufferGeometry();
+    const vertices = new Float32Array([...start, ...end]);
+    geo.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.5 });
+    return new THREE.Line(geo, mat);
+  }, [start, end, color]);
+
+  return <primitive object={line} />;
 }
 
 export default function ArchitecturalModel() {
@@ -97,6 +95,12 @@ export default function ArchitecturalModel() {
     <group ref={groupRef} dispose={null}>
       {/* Ground grid */}
       <gridHelper args={[40, 40, '#1a1918', '#141312']} position={[0, -0.5, 0]} />
+
+      {/* Ground plane for shadows */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.49, 0]} receiveShadow>
+        <planeGeometry args={[40, 40]} />
+        <shadowMaterial transparent opacity={0.3} />
+      </mesh>
 
       {/* === CORE: Deconstructed Building Form === */}
       {/* Main vertical slab - the "spine" */}
@@ -145,6 +149,21 @@ export default function ArchitecturalModel() {
         rotation={[0, -0.05, 0]}
         args={[7, 0.12, 8]}
         color="#2a2825"
+      />
+
+      {/* Additional wall planes for depth */}
+      <ThinSlab
+        position={[-1.2, 1.5, -2]}
+        rotation={[0, 0.3, 0]}
+        args={[2.5, 2.5, 0.15]}
+        color="#9e9a92"
+      />
+
+      <ThinSlab
+        position={[1.8, 3, 1.8]}
+        rotation={[0.05, -0.2, 0]}
+        args={[0.12, 3.5, 3]}
+        color="#b5b0a8"
       />
 
       {/* === WIREFRAMES: Defining Volume === */}

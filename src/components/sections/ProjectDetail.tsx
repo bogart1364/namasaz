@@ -46,10 +46,8 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] bg-[#0a0a0a] overflow-y-auto"
-      style={{ scrollbarWidth: 'none' }}
+      className="fixed inset-0 z-[100] bg-[#0a0a0a] overflow-y-auto hide-scrollbar"
     >
-      <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 
       {/* Close button */}
       <button
