@@ -55,7 +55,7 @@ export default function Projects({ onOpenAll }: ProjectsProps) {
                 <p className="text-xs text-neutral-500 font-light">{t.projects.data.length} {t.projects.images}</p>
               </div>
               <div className="flex items-center gap-5">
-                <div className="w-2 h-2 bg-red-600 animate-pulse" />
+                <div className="w-2 h-2 bg-yellow-500 animate-pulse" />
                 <span className="text-[10px] tracking-[0.2em] text-neutral-500 font-mono">PORTFOLIO</span>
                 <button
                   onClick={onOpenAll}
