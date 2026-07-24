@@ -565,6 +565,7 @@ const translations = {
       authorSub: 'استودیو معماری نماساز',
       tags: 'برچسب‌ها',
       allArticles: 'همه مقالات',
+      articleCount: 'مقاله',
       data: [
         { id: 1, title: 'متریال شناسی: بتن اکسپوز', subtitle: 'Material Study: Exposed Concrete', category: 'متریال شناسی', readTime: '۸', date: '۱۴۰۳/۰۹',
           content: ['بتن اکسپوز یکی از محبوب‌ترین مصالح در معماری معاصر جهان است و امروزه به امضای بسیاری از پروژه‌های مینیمال تبدیل شده است.'],
@@ -1596,6 +1597,7 @@ const translations = {
       authorSub: 'NAMASAZ Architecture Studio',
       tags: 'Tags',
       allArticles: 'All Articles',
+      articleCount: 'Articles',
       data: [
         { id: 1, title: 'Material Study: Exposed Concrete', subtitle: 'متریال شناسی: بتن اکسپوز', category: 'Material Study', readTime: '8', date: '2024/12',
           content: ['Exposed concrete is among the most beloved materials in contemporary architecture worldwide, now a signature of minimalist practice.'],

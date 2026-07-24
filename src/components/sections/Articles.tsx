@@ -48,18 +48,47 @@ export default function Articles({ onOpenAll }: { onOpenAll: () => void }) {
 
   return (
     <>
-      <section id="articles" className="relative w-full bg-[#080808] py-24 px-6 md:px-12 z-20">
-        <div className="max-w-7xl mx-auto">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between text-center md:text-left">
-            <div className="text-center md:text-left">
-              <span className="text-[10px] tracking-[0.25em] text-neutral-500 block mb-4 font-mono uppercase">{t.articles.label}</span>
-              <h2 className="text-4xl md:text-5xl font-extralight text-white tracking-tight">{t.articles.title}</h2>
-              <div className="w-12 h-[1px] bg-neutral-600 mt-5 mx-auto md:ml-0 md:mr-auto" />
+      <section id="articles" className="relative w-full bg-[#080808] z-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-24">
+          {/* Header */}
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} className={`mb-16 ${align}`}>
+            <span className="text-[10px] tracking-[0.3em] text-neutral-600 font-mono block mb-4">
+              {t.articles.label}
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-white tracking-tight mb-4">
+              {t.articles.title}
+            </h2>
+            <div className="w-12 h-[1px] bg-neutral-600 mt-6" />
+          </motion.div>
+
+          {/* Banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-12 py-6 px-6 md:px-8 border border-neutral-800/50 bg-neutral-900/20"
+          >
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className={align}>
+                <h3 className="text-base text-white font-light mb-1">{t.articles.title}</h3>
+                <p className="text-xs text-neutral-500 font-light">{t.articles.data.length} {t.articles.articleCount}</p>
+              </div>
+              <div className="flex items-center gap-5">
+                <div className="w-2 h-2 bg-green-500 animate-pulse" />
+                <span className="text-[10px] tracking-[0.2em] text-neutral-500 font-mono">ARTICLES</span>
+                <button
+                  onClick={onOpenAll}
+                  className="group flex items-center gap-2 text-[10px] tracking-[0.15em] text-neutral-500 hover:text-white font-mono transition-all border border-neutral-800 hover:border-neutral-600 py-1.5 px-4 cursor-pointer"
+                >
+                  {t.articles.viewAll}
+                  <svg className="w-3 h-3 rtl:rotate-180 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 19 19 12 12 5" />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <button onClick={onOpenAll} className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] text-neutral-400 hover:text-white transition-colors group mt-6 md:mt-0 cursor-pointer">
-              {t.articles.viewAll}
-              <span className="w-6 h-[1px] bg-neutral-600 group-hover:w-10 group-hover:bg-white transition-all duration-300" />
-            </button>
           </motion.div>
 
           {/* Featured */}
