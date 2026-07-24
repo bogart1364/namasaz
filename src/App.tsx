@@ -10,6 +10,7 @@ import MagneticCursor from './components/ui/MagneticCursor';
 import Projects from './components/sections/Projects';
 import Products from './components/sections/Products';
 import AllProducts from './components/sections/AllProducts';
+import AllProjects from './components/sections/AllProjects';
 import About from './components/sections/About';
 import Articles from './components/sections/Articles';
 import AllArticles from './components/sections/AllArticles';
@@ -20,6 +21,7 @@ export default function App() {
   const [showAllProducts, setShowAllProducts] = useState(false);
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
   const [showAllArticles, setShowAllArticles] = useState(false);
+  const [showAllProjects, setShowAllProjects] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function App() {
           <Overlay />
 
           {/* Content sections */}
-          <Projects />
+          <Projects onOpenAll={() => setShowAllProjects(true)} />
           <Products onOpenAll={openAllProducts} />
           <About />
           <Articles onOpenAll={() => setShowAllArticles(true)} />
@@ -74,6 +76,13 @@ export default function App() {
         <AnimatePresence>
           {showAllArticles && (
             <AllArticles onClose={() => setShowAllArticles(false)} />
+          )}
+        </AnimatePresence>
+
+        {/* All Projects page */}
+        <AnimatePresence>
+          {showAllProjects && (
+            <AllProjects onClose={() => setShowAllProjects(false)} />
           )}
         </AnimatePresence>
       </div>

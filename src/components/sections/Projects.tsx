@@ -11,9 +11,14 @@ const cardVariants = {
   }),
 };
 
-export default function Projects() {
+interface ProjectsProps {
+  onOpenAll: () => void;
+}
+
+export default function Projects({ onOpenAll }: ProjectsProps) {
   const { t, align, alignEnd } = useLang();
   const [selectedProject, setSelectedProject] = useState<typeof t.projects.data[0] | null>(null);
+  const visibleProjects = t.projects.data.slice(0, 6);
 
   return (
     <>
@@ -34,7 +39,7 @@ export default function Projects() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {t.projects.data.map((project, i) => (
+            {visibleProjects.map((project, i) => (
               <motion.div
                 key={project.id}
                 custom={i}
@@ -73,6 +78,29 @@ export default function Projects() {
               </motion.div>
             ))}
           </div>
+
+          {/* View All button */}
+          {t.projects.data.length > 6 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mt-12 flex justify-center"
+            >
+              <button
+                onClick={onOpenAll}
+                className="group flex items-center gap-3 py-4 px-10 border border-neutral-700 hover:border-white text-neutral-400 hover:text-white transition-all text-sm font-light cursor-pointer"
+              >
+                <span>{t.projects.allProjects}</span>
+                <span className="text-[10px] text-neutral-600">({t.projects.data.length})</span>
+                <svg className="w-4 h-4 rtl:rotate-180 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 19 19 12 12 5" />
+                </svg>
+              </button>
+            </motion.div>
+          )}
         </div>
       </section>
       <ProjectDetail project={selectedProject} onClose={() => setSelectedProject(null)} />
