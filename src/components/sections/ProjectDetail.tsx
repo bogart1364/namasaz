@@ -2,6 +2,13 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 
+const kenBurns = [
+  'animate-[kenBurns1_20s_ease-in-out_infinite]',
+  'animate-[kenBurns2_25s_ease-in-out_infinite]',
+  'animate-[kenBurns3_22s_ease-in-out_infinite]',
+  'animate-[kenBurns4_28s_ease-in-out_infinite]',
+];
+
 interface ProjectDetailProps {
   project: {
     id: string;
@@ -75,7 +82,7 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
 
       {/* Hero image */}
       <div className="w-full h-[60vh] md:h-[70vh] relative">
-        <img src={project.images[0]} alt={project.title} className="w-full h-full object-cover" loading="eager" />
+        <img src={project.images[0]} alt={project.title} className="w-full h-full object-cover animate-[kenBurns1_30s_ease-in-out_infinite]" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/30" />
         <div className={`absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-10 ${align === 'text-right' ? 'text-right' : 'text-left'}`}>
           <span className="text-[10px] tracking-[0.3em] text-neutral-400 font-mono">
@@ -127,7 +134,7 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
                 transition={{ duration: 0.8, delay: i * 0.1 }}
                 className={`relative overflow-hidden ${i === 0 ? 'md:col-span-2 aspect-[21/9]' : 'aspect-[4/3]'}`}
               >
-                <img src={img} alt={`${project.title} - ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <img src={img} alt={`${project.title} - ${i + 1}`} className={`w-full h-full object-cover ${kenBurns[i % kenBurns.length]}`} loading="lazy" />
                 <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors duration-500" />
                 <div className="absolute bottom-2 right-2">
                   <span className="text-[10px] text-white/50 font-mono bg-black/40 px-2 py-0.5">
