@@ -22,20 +22,53 @@ export default function Projects({ onOpenAll }: ProjectsProps) {
 
   return (
     <>
-      <section id="projects" className="relative w-full bg-[#0a0a0a] py-24 px-6 md:px-12 z-20">
-        <div className="max-w-7xl mx-auto">
+      <section id="projects" className="relative w-full bg-[#0a0a0a] z-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-24">
+          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8 }}
-            className="mb-16"
+            className={`mb-16 ${align}`}
           >
-            <span className="text-[11px] tracking-[0.25em] text-neutral-500 block mb-4 uppercase font-light">{t.projects.label}</span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-white tracking-tight">
+            <span className="text-[10px] tracking-[0.3em] text-neutral-600 font-mono block mb-4">
+              {t.projects.label}
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-white tracking-tight mb-4">
               {t.projects.title}
             </h2>
             <div className="w-12 h-[1px] bg-neutral-600 mt-6" />
+          </motion.div>
+
+          {/* Banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-12 py-6 px-6 md:px-8 border border-neutral-800/50 bg-neutral-900/20"
+          >
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className={align}>
+                <h3 className="text-base text-white font-light mb-1">{t.projects.title}</h3>
+                <p className="text-xs text-neutral-500 font-light">{t.projects.data.length} {t.projects.images}</p>
+              </div>
+              <div className="flex items-center gap-5">
+                <div className="w-2 h-2 bg-red-600 animate-pulse" />
+                <span className="text-[10px] tracking-[0.2em] text-neutral-500 font-mono">PORTFOLIO</span>
+                <button
+                  onClick={onOpenAll}
+                  className="group flex items-center gap-2 text-[10px] tracking-[0.15em] text-neutral-500 hover:text-white font-mono transition-all border border-neutral-800 hover:border-neutral-600 py-1.5 px-4 cursor-pointer"
+                >
+                  {t.projects.allProjects}
+                  <svg className="w-3 h-3 rtl:rotate-180 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 19 19 12 12 5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -78,29 +111,6 @@ export default function Projects({ onOpenAll }: ProjectsProps) {
               </motion.div>
             ))}
           </div>
-
-          {/* View All button */}
-          {t.projects.data.length > 6 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="mt-12 flex justify-center"
-            >
-              <button
-                onClick={onOpenAll}
-                className="group flex items-center gap-3 py-4 px-10 border border-neutral-700 hover:border-white text-neutral-400 hover:text-white transition-all text-sm font-light cursor-pointer"
-              >
-                <span>{t.projects.allProjects}</span>
-                <span className="text-[10px] text-neutral-600">({t.projects.data.length})</span>
-                <svg className="w-4 h-4 rtl:rotate-180 rtl:group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 19 19 12 12 5" />
-                </svg>
-              </button>
-            </motion.div>
-          )}
         </div>
       </section>
       <ProjectDetail project={selectedProject} onClose={() => setSelectedProject(null)} />
