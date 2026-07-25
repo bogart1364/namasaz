@@ -121,7 +121,7 @@ const translations = {
           description: 'رستوران باغ صفا فضایی میان طبیعت و معماری است که با بهره‌گیری از مصالح بومی و سقف‌های چوبی گشوده، تجربه‌ای صمیمی و آرام را برای مهمانان رقم می‌زند. نورپردازی گرم در شب فضای باغ را به محیطی دلنشین برای گردهمایی تبدیل می‌کند.',
           specs: [{ label: 'مساحت', value: '۱,۱۰۰ متر مربع' }, { label: 'موقعیت', value: 'مازندران' }, { label: 'متریال', value: 'چوب، سنگ، شیشه' }, { label: 'مدت اجرا', value: '۱۴ ماه' }, { label: 'سال تحویل', value: '۱۴۰۳' }],
           images: [
-            '/assets/renders/project-05%20resturant%20bagh%20safa/01.jpg',
+            '/assets/renders/project-05%20resturant%20bagh%20safa/hero.jpg',
             '/assets/renders/project-05%20resturant%20bagh%20safa/01.png',
             '/assets/renders/project-05%20resturant%20bagh%20safa/02.png',
             '/assets/renders/project-05%20resturant%20bagh%20safa/03.png',
@@ -1157,7 +1157,7 @@ const translations = {
           description: 'Restaurant Bagh Safa is a space between nature and architecture, using local materials and open timber roofs to create an intimate, calm experience for guests. Warm night lighting turns the garden into a delightful gathering place.',
           specs: [{ label: 'Area', value: '1,100 sqm' }, { label: 'Location', value: 'Mazandaran' }, { label: 'Materials', value: 'Wood, Stone, Glass' }, { label: 'Duration', value: '14 months' }, { label: 'Year', value: '2024' }],
           images: [
-            '/assets/renders/project-05%20resturant%20bagh%20safa/01.jpg',
+            '/assets/renders/project-05%20resturant%20bagh%20safa/hero.jpg',
             '/assets/renders/project-05%20resturant%20bagh%20safa/01.png',
             '/assets/renders/project-05%20resturant%20bagh%20safa/02.png',
             '/assets/renders/project-05%20resturant%20bagh%20safa/03.png',
