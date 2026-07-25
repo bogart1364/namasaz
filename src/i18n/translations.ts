@@ -101,7 +101,11 @@ const translations = {
           description: 'بورهان یک شهرک ویلایی در شمال کشور است که ویلاهای آن با سبک معماری خاص و یکپارچه طراحی شده‌اند. همه امکانات و نیازهای ساکنان از فضاهای سبز و ورزشی گرفته تا خدمات عمومی، در دل خود شهرک پیش‌بینی شده است. معماری با الهام از طبیعت شمال و استفاده از متریال بومی، حس آرامش و زندگی هماهنگ با محیط زیست را منتقل می‌کند.',
           specs: [{ label: 'مساحت', value: '۱۲,۰۰۰ متر مربع' }, { label: 'موقعیت', value: 'شمال ایران' }, { label: 'نوع', value: 'شهرک ویلایی' }, { label: 'مدت اجرا', value: '۳۶ ماه' }, { label: 'سال تحویل', value: '۱۴۰۳' }],
           images: [
-            '/assets/renders/project-08%20borhan/project-01.png',
+            '/assets/renders/project-08%20borhan/0hero.jpg',
+            '/assets/renders/project-08%20borhan/01.jpg',
+            '/assets/renders/project-08%20borhan/02.jpg',
+            '/assets/renders/project-08%20borhan/03.jpg',
+            '/assets/renders/project-08%20borhan/04.jpg',
           ],
         },
         {
@@ -1137,7 +1141,11 @@ const translations = {
           description: 'Borhan is a northern villa township whose villas are designed in a distinctive, unified architectural style. All resident amenities and needs — from green and sports spaces to public services — are provided within the township itself. The architecture, inspired by northern nature and local materials, conveys a sense of calm and eco-harmonious living.',
           specs: [{ label: 'Area', value: '12,000 sqm' }, { label: 'Location', value: 'Northern Iran' }, { label: 'Type', value: 'Villa Township' }, { label: 'Duration', value: '36 months' }, { label: 'Year', value: '2024' }],
           images: [
-            '/assets/renders/project-08%20borhan/project-01.png',
+            '/assets/renders/project-08%20borhan/0hero.jpg',
+            '/assets/renders/project-08%20borhan/01.jpg',
+            '/assets/renders/project-08%20borhan/02.jpg',
+            '/assets/renders/project-08%20borhan/03.jpg',
+            '/assets/renders/project-08%20borhan/04.jpg',
           ],
         },
         {
