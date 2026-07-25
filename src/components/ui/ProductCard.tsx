@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useLang } from '../../i18n/LanguageContext';
 import InquiryForm from './InquiryForm';
+import ReviewSystem from './ReviewSystem';
 
 interface Product {
   id: string;
@@ -297,6 +298,14 @@ export default function ProductCard({ product, onOpenInGallery, autoOpen }: Prod
                     <div className="px-10 py-10">
                       <span className="text-[9px] tracking-[0.25em] text-neutral-600 font-mono block mb-6">{labels.story}</span>
                       <p className="text-sm text-neutral-400 leading-[2.4] font-light">{story}</p>
+                    </div>
+
+                    {/* Divider */}
+                    <div className="mx-10 h-[1px] bg-neutral-800/40" />
+
+                    {/* Reviews */}
+                    <div className="px-10 py-10">
+                      <ReviewSystem productId={product.id} />
                     </div>
 
                     {/* Divider */}
